@@ -1,1 +1,1 @@
-# Takes coordinates from USGS site and displays it on a map 
+# Takes coordinates from USGS and displays it on a map 

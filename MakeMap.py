@@ -16,7 +16,7 @@ my_map.fillcontinents(color='coral')
 my_map.drawmapboundary()
 my_map.drawstates(color='b')
 
-# HERE YOU SHOULD READ EQCOORDINATES INSTEAD
+# HERE YOU SHOULD READ EQDATA INSTEAD
 
 # These are the coordinates
 lat1, lon1 = 40.728, -74.675

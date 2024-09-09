@@ -16,8 +16,6 @@ my_map.fillcontinents(color='coral')
 my_map.drawmapboundary()
 my_map.drawstates(color='b')
 
-
-
 lat1, lon1 = 40.728, -74.675
 xpt, ypt = my_map(lon1, lat1)
 my_map.plot(xpt, ypt, 'bo')

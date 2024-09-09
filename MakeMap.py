@@ -16,33 +16,44 @@ my_map.fillcontinents(color='coral')
 my_map.drawmapboundary()
 my_map.drawstates(color='b')
 
+# HERE YOU SHOULD READ EQCOORDINATES INSTEAD
+
+# These are the coordinates
 lat1, lon1 = 40.728, -74.675
+lat2, lon2 = 40.716, -74.757
+lat3, lon3 = 40.6915, -74.749
+lat4, lon4 = 40.6978, -74.7463
+lat5, lon5 = 40.690, -74.7665
+lat6, lon6 = 40.6963, -74.7596
+lat7, lon7 = 40.7125, -74.757
+
+# YOU SHOULD ALSO MAKE A LIST OF COLORS AND SYMBOLS
+
+# THIS YOU SHOULD REFORMULATE AS A LOOP
 xpt, ypt = my_map(lon1, lat1)
 my_map.plot(xpt, ypt, 'bo')
 
-lat2, lon2 = 40.716, -74.757
 xpt, ypt = my_map(lon2, lat2)
 my_map.plot(xpt, ypt, 'ro')
 
-lat3, lon3 = 40.6915, -74.749
 xpt, ypt = my_map(lon3, lat3)
 my_map.plot (xpt, ypt, 'go')
 
-lat4, lon4 = 40.6978, -74.7463
 xpt, ypt = my_map(lon4, lat4)
 my_map.plot (xpt, ypt, 'co')
 
-lat5, lon5 = 40.690, -74.7665
 xpt, ypt = my_map(lon5, lat5)
 my_map.plot (xpt, ypt, 'mo')
 
-lat6, lon6 = 40.6963, -74.7596
 xpt, ypt = my_map(lon6, lat6)
 my_map.plot (xpt, ypt, 'yo')
 
-lat7, lon7 = 40.7125, -74.757
 xpt, ypt, = my_map(lon7, lat7)
 my_map.plot (xpt, ypt, 'ko')
+
+# HERE YOU MAKE THE LEGEND
+
+# MAKE THIS A LOOP, BEGIN FROM THE TOP LEFT CORNER AND INCREMENT DOWN BY ONE EVERY ONE OF EARTHQUAKES
 
 x1 = [-74.675]
 y1 = [40.728]
@@ -64,6 +75,8 @@ y6 = [40.6963]
 
 x7 = [-74.757]
 y7 = [40.7125]
+
+# AGAIN LOOP, AND USE THE THIRD COLUMN OF THE EARTHQUAKE COORDINATES
 plt.plot(x1, y1, 'blue', label='2.6')
 plt.plot(x2, y2, 'red', label='2.9')
 plt.plot(x3, y3, 'green', label='2.6')
@@ -77,7 +90,6 @@ plt.title('Earthquake occurrence between April and May\nin New Jersey ')
 plt.xlabel('longitude')
 plt.ylabel('latitude')
 plt.legend()
-
 
 
 # my_map.scatter(x=lon1, y=lat1, latlon=True)

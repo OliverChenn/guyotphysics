@@ -18,6 +18,7 @@ my_map.drawstates(color='b')
 
 # HERE YOU SHOULD READ EQDATA INSTEAD
 
+# fghjkl
 # These are the coordinates
 lat1, lon1 = 40.728, -74.675
 lat2, lon2 = 40.716, -74.757

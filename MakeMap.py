@@ -6,9 +6,9 @@ import numpy as np
 #  for 'low', not a numeral 1
 
 my_map = Basemap(projection='merc', lat_0=40.0583, lon_0=-74.4057,
-    resolution = 'l', area_thresh = 0.1,
-    llcrnrlon=-75.751, llcrnrlat=38.976,
-    urcrnrlon=-73.564, urcrnrlat=41.298)
+    resolution = 'h', area_thresh = 0.1,
+    llcrnrlon=-75.259, llcrnrlat=41.032,
+    urcrnrlon=-73.922, urcrnrlat=40.324)
 
 my_map.drawcoastlines()
 my_map.drawcountries()
@@ -31,7 +31,7 @@ lat7, lon7 = 40.7125, -74.757
 # YOU SHOULD ALSO MAKE A LIST OF COLORS AND SYMBOLS
 
 # THIS YOU SHOULD REFORMULATE AS A LOOP
-
+for xpt, ypt in xpt, ypt((lon1, lat1), (lon7, lat7))
 
 xpt, ypt = my_map(lon1, lat1)
 my_map.plot(xpt, ypt, 'bo')
@@ -104,7 +104,7 @@ plt.legend()
 # 1. figure out class and object in Python (in programming in general)
 # 2. ways to call a function and class method in Python (args and kwargs)
 # 3. make sure you understand variables and function arguments (why
-cant you put sth. like , cmap=ts)
+
 
 
 plt.show()

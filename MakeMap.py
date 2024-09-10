@@ -6,7 +6,7 @@ import numpy as np
 #  for 'low', not a numeral 1
 
 my_map = Basemap(projection='merc', lat_0=40.0583, lon_0=-74.4057,
-    resolution = 'h', area_thresh = 0.1,
+    resolution = 'l', area_thresh = 0.1,
     llcrnrlon=-75.751, llcrnrlat=38.976,
     urcrnrlon=-73.564, urcrnrlat=41.298)
 
@@ -31,6 +31,8 @@ lat7, lon7 = 40.7125, -74.757
 # YOU SHOULD ALSO MAKE A LIST OF COLORS AND SYMBOLS
 
 # THIS YOU SHOULD REFORMULATE AS A LOOP
+
+
 xpt, ypt = my_map(lon1, lat1)
 my_map.plot(xpt, ypt, 'bo')
 

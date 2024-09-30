@@ -1,11 +1,13 @@
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
 import numpy as np
-
+import pandas as pd
 # make sure the value of resolution is a lowercase L,
 #  for 'low', not a numeral 1
+# data = pd.read_csv('./eqdata', delimiter='', header=None,)
 
 my_map = Basemap(projection='merc', lat_0=40.0583, lon_0=-74.4057,
+
     resolution = 'h', area_thresh = 0.1,
     llcrnrlon=-75.259, llcrnrlat=41.032,
     urcrnrlon=-73.922, urcrnrlat=40.324)
@@ -20,45 +22,31 @@ my_map.drawstates(color='b')
 
 # fghjkl
 # These are the coordinates
-lat1, lon1 = 40.728, -74.675
-lat2, lon2 = 40.716, -74.757
-lat3, lon3 = 40.6915, -74.749
-lat4, lon4 = 40.6978, -74.7463
-lat5, lon5 = 40.690, -74.7665
-lat6, lon6 = 40.6963, -74.7596
-lat7, lon7 = 40.7125, -74.757
-
+locations =[
+    (40.728, -74.675),
+    (40.716, -74.757),
+    (40.6915, -74.749),
+    (40.6978, -74.7463),
+    (40.690, -74.7665),
+    (40.6963, -74.7596),
+    (40.7125, -74.757)
+]
 # YOU SHOULD ALSO MAKE A LIST OF COLORS AND SYMBOLS
-
+colors = ['bo', 'ro', 'go', 'co', 'mo', 'yo', 'ko']
 # THIS YOU SHOULD REFORMULATE AS A LOOP
-for xpt, ypt in xpt, ypt((lon1, lat1), (lon7, lat7))
+for i, (lat, lon ) in enumerate(locations):
+    xpt, ypt = my_map(lon, lat)
+    my_map.plot(xpt, ypt, colors[i])
 
-xpt, ypt = my_map(lon1, lat1)
-my_map.plot(xpt, ypt, 'bo')
+    print('i')
 
-xpt, ypt = my_map(lon2, lat2)
-my_map.plot(xpt, ypt, 'ro')
-
-xpt, ypt = my_map(lon3, lat3)
-my_map.plot (xpt, ypt, 'go')
-
-xpt, ypt = my_map(lon4, lat4)
-my_map.plot (xpt, ypt, 'co')
-
-xpt, ypt = my_map(lon5, lat5)
-my_map.plot (xpt, ypt, 'mo')
-
-xpt, ypt = my_map(lon6, lat6)
-my_map.plot (xpt, ypt, 'yo')
-
-xpt, ypt, = my_map(lon7, lat7)
-my_map.plot (xpt, ypt, 'ko')
 
 # HERE YOU MAKE THE LEGEND
 
 # MAKE THIS A LOOP, BEGIN FROM THE TOP LEFT CORNER AND INCREMENT DOWN BY ONE EVERY ONE OF EARTHQUAKES
-
-x1 = [-74.675]
+xs = [-74.675, -74.757, -74.749, -74.7463, -74.7665, -74.7596, -74.757]
+ys = [40.728, 40.716, 40.6915, 40.6978, 40.690, 40.6963, 40.7125]
+x1 = [-74.67]
 y1 = [40.728]
 
 x2 = [-74.757]

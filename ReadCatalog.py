@@ -10,24 +10,23 @@ data = 'bogus'
 data_array = []
 
 with open(fname) as file:
-    #took advice from https://stackoverflow.com/questions/54839128/filling-an-array-in-python
+    # https://stackoverflow.com/questions/54839128/filling-an-array-in-python
+    # While counter is below maximum and data is not empty
     while iter <= maxi and data:
         data = file.readline().strip()
-
+        # If the data variable is empty
         if not data:
             break
-
+        # Parse the data and assigns it to variable value
         values = data.split()
-
-        if len(values) >= 3:
-            x = float(values[0])
-            y = float(values[1])
-            magnitude = float(values[2])
-            data_array.append((x, y, magnitude))
-        #this updates the counter
+        x = float(values[0])
+        y = float(values[1])
+        magnitude = float(values[2])
+        # Make a row/column table
+        data_array.append((x, y, magnitude))
+        # this updates the counter
         iter += 1
+# Repeat the table
 for entry in data_array:
-    # Define the maximum iterations and initialize variables
-
     print(f"x: {entry[0]}, y: {entry[1]}, Magnitude: {entry[2]}")
 

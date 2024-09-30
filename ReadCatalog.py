@@ -2,8 +2,6 @@
 import numpy as np
 # This defines the filename
 fname='/Users/oliverchen/PyCharmProjects/guyotphysics/eqdata'
-# This opens the file
-
 
 iter = 1
 maxi = 100000000000000000
@@ -11,8 +9,8 @@ data = 'bogus'
 
 data_array = []
 
-
 with open(fname) as file:
+    #took advice from https://stackoverflow.com/questions/54839128/filling-an-array-in-python
     while iter <= maxi and data:
         data = file.readline().strip()
 
@@ -26,7 +24,7 @@ with open(fname) as file:
             y = float(values[1])
             magnitude = float(values[2])
             data_array.append((x, y, magnitude))
-
+        #this updates the counter
         iter += 1
 for entry in data_array:
     # Define the maximum iterations and initialize variables

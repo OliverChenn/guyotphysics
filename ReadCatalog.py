@@ -3,12 +3,12 @@ import numpy as np
 # This defines the filename
 fname='/Users/oliverchen/PyCharmProjects/guyotphysics/eqdata'
 # This opens the file
-fid = open(fname,'r')
-# This just reads the whole thing
-# content=fid.read()
-# This prints and indexes every character separately
-# print(content[2])
-fid.close()
+# fid = open(fname,'r')
+# # This just reads the whole thing
+# # content=fid.read()
+# # This prints and indexes every character separately
+# # print(content[2])
+# fid.close()
 
 iter = 1
 maxi = 100000000000000000

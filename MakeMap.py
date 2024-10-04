@@ -1,15 +1,18 @@
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
+import ReadCatalog
 import numpy as np
 import pandas as pd
 # make sure the value of resolution is a lowercase L,
 #  for 'low', not a numeral 1
 # data = pd.read_csv('./eqdata', delimiter='', header=None,)
+data = ReadCatalog.get_catalog_data()
 
-my_map = Basemap(projection='merc', lat_0=40.0583, lon_0=-74.4057,
-
-    resolution = 'h', area_thresh = 0.1,
-    llcrnrlon=-75.259, llcrnrlat=41.032,
+plt.figure(figsize=(10, 10))
+my_map = Basemap(projection='merc',
+#calculate these things from the data
+    resolution = 'i',
+    llcrnrlon=-75.259, llcrnrlat=40.732,
     urcrnrlon=-73.922, urcrnrlat=40.324)
 
 my_map.drawcoastlines()
@@ -20,16 +23,12 @@ my_map.drawstates(color='b')
 
 # HERE YOU SHOULD READ EQDATA INSTEAD
 
-# fghjkl
 # These are the coordinates
+for row in data:
+    first_column = row[0]
+    second_column = row[1]
 locations =[
-    (40.728, -74.675),
-    (40.716, -74.757),
-    (40.6915, -74.749),
-    (40.6978, -74.7463),
-    (40.690, -74.7665),
-    (40.6963, -74.7596),
-    (40.7125, -74.757)
+f"{specific_spot}({first_column}, {second_column})"
 ]
 # YOU SHOULD ALSO MAKE A LIST OF COLORS AND SYMBOLS
 colors = ['bo', 'ro', 'go', 'co', 'mo', 'yo', 'ko']

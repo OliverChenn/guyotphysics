@@ -1,6 +1,7 @@
 # Given a file called eqdata, open it, and read its contents
 import numpy as np
 # This defines the filename
+def get_catalog_data():
 fname='/Users/oliverchen/PyCharmProjects/guyotphysics/eqdata'
 
 iter = 1

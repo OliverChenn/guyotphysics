@@ -12,8 +12,8 @@ plt.figure(figsize=(10, 10))
 my_map = Basemap(projection='merc',
 #calculate these things from the data
     resolution = 'i',
-    llcrnrlon=-75.259, llcrnrlat=40.732,
-    urcrnrlon=-73.922, urcrnrlat=40.324)
+    llcrnrlon=-74.829, llcrnrlat=40.740,
+    urcrnrlon=-74.652, urcrnrlat=40.651)
 
 my_map.drawcoastlines()
 my_map.drawcountries()
@@ -24,12 +24,12 @@ my_map.drawstates(color='b')
 # HERE YOU SHOULD READ EQDATA INSTEAD
 
 # These are the coordinates
+locations =[]
 for row in data:
     first_column = row[0]
     second_column = row[1]
-locations =[
-f"{specific_spot}({first_column}, {second_column})"
-]
+    locations.append([first_column, second_column])
+
 # YOU SHOULD ALSO MAKE A LIST OF COLORS AND SYMBOLS
 colors = ['bo', 'ro', 'go', 'co', 'mo', 'yo', 'ko']
 # THIS YOU SHOULD REFORMULATE AS A LOOP

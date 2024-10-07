@@ -28,6 +28,7 @@ locations =[]
 for row in data:
     first_column = row[0]
     second_column = row[1]
+    third_column = row[2]
     locations.append([first_column, second_column])
 
 # YOU SHOULD ALSO MAKE A LIST OF COLORS AND SYMBOLS

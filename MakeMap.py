@@ -1,7 +1,7 @@
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
 import ReadCatalog
-import numpy as np
+import folium
 import pandas as pd
 
 # data = pd.read_csv('./eqdata', delimiter='', header=None,)
@@ -38,6 +38,29 @@ for i, (lat, lon ) in enumerate(locations):
     my_map.plot(xpt, ypt, colors[i])
 
     print('i')
+
+data = {
+    'lat': [first_column],
+    'lon': [second_column],
+    'value': [third_column]
+}
+df = pd.DataFrame(data)
+
+
+
+
+def get_color(value):
+    if value < 2:
+        return 'lightblue'
+    elif value < 4:
+        return 'blue'
+    elif value < 6:
+        return 'darkblue'
+    else:
+        return 'black'
+
+
+
 
 plt.title('Earthquake occurrence between April and May\nin New Jersey ')
 plt.xlabel('longitude')

@@ -3,7 +3,9 @@ import matplotlib.pyplot as plt
 import ReadCatalog
 import folium
 import pandas as pd
-
+import branca.colormap as cm
+import numpy as np
+import matplotlib as mpl
 # data = pd.read_csv('./eqdata', delimiter='', header=None,)
 data = ReadCatalog.get_catalog_data()
 
@@ -28,36 +30,19 @@ for row in data:
     first_column = row[0]
     second_column = row[1]
     third_column = row[2]
-    locations.append([first_column, second_column])
+    locations.append([first_column, second_column, third_column])
 
 # YOU SHOULD ALSO MAKE A LIST OF COLORS AND SYMBOLS
-colors = ['bo', 'ro', 'go', 'co', 'mo', 'yo', 'ko']
+colors = ['bo', 'bo', 'bo', 'bo', 'bo', 'bo', 'bo']
+cmap = mpl.colormaps['rainbow']
 # THIS YOU SHOULD REFORMULATE AS A LOOP
-for i, (lat, lon ) in enumerate(locations):
+for i, (lat, lon, mag ) in enumerate(locations):
     xpt, ypt = my_map(lon, lat)
-    my_map.plot(xpt, ypt, colors[i])
-
-    print('i')
-
-data = {
-    'lat': [first_column],
-    'lon': [second_column],
-    'value': [third_column]
-}
-df = pd.DataFrame(data)
+    c=cmap(mag/5)
+    print(c)
+    my_map.plot(xpt, ypt, color=(0,0,1,mag/5), marker='o')
 
 
-
-
-def get_color(value):
-    if value < 2:
-        return 'lightblue'
-    elif value < 4:
-        return 'blue'
-    elif value < 6:
-        return 'darkblue'
-    else:
-        return 'black'
 
 
 

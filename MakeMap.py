@@ -5,6 +5,8 @@ import folium
 import pandas as pd
 import branca.colormap as cm
 import numpy as np
+import matplotlib.colors as mcolors
+import matplotlib.cm as pm
 import matplotlib as mpl
 # data = pd.read_csv('./eqdata', delimiter='', header=None,)
 data = ReadCatalog.get_catalog_data()
@@ -42,7 +44,13 @@ for i, (lat, lon, mag ) in enumerate(locations):
     print(c)
     my_map.plot(xpt, ypt, color=(0,0,1,mag/5), marker='o')
 
+fig, ax = plt.subplots(figsize=(6, 1))  # Adjust size if needed
+fig.subplots_adjust(bottom=0.5)
 
+cb = plt.colorbar(
+    pm.ScalarMappable(norm=mcolors.Normalize(vmin=1, vmax=5), cmap=pm.Blues),
+    cax=ax, orientation='horizontal'
+)
 
 
 

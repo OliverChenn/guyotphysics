@@ -1,64 +1,61 @@
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
-import ReadCatalog
-import folium
-import pandas as pd
-import branca.colormap as cm
-import numpy as np
-import matplotlib.colors as mcolors
-import matplotlib.cm as pm
+import ReadCatalog  # Custom module for reading data
 import matplotlib as mpl
-# data = pd.read_csv('./eqdata', delimiter='', header=None,)
+from matplotlib.cm import ScalarMappable
+from matplotlib.colors import Normalize
+
+# Read your catalog data (e.g., [[40.74, -74.72, 2.5], [34.05, -118.25, 3.1], ...])
 data = ReadCatalog.get_catalog_data()
 
-plt.figure(figsize=(10, 10))
-my_map = Basemap(projection='merc',
-# calculate these things from the data
-# make sure the value of resolution is a lowercase L,
-#  for 'low', not a numeral 1
-    resolution = 'i',
-    llcrnrlon=-74.829, llcrnrlat=40.740,
-    urcrnrlon=-74.652, urcrnrlat=40.651)
+# Extract latitudes and longitudes to determine boundaries
+lats = [row[0] for row in data]
+lons = [row[1] for row in data]
 
+# Compute tighter map boundaries with a smaller buffer
+buffer = 0.25  # Smaller buffer for tighter zoom
+llcrnrlon, llcrnrlat = min(lons) - buffer, min(lats) - buffer  # Lower-left corner
+urcrnrlon, urcrnrlat = max(lons) + buffer, max(lats) + buffer  # Upper-right corner
+
+# Create a figure and axis
+fig, ax = plt.subplots(figsize=(10, 10))
+
+# Create the map with dynamic and zoomed-in boundaries
+my_map = Basemap(
+    projection='merc',
+    resolution='i',
+    llcrnrlon=llcrnrlon, llcrnrlat=llcrnrlat,
+    urcrnrlon=urcrnrlon, urcrnrlat=urcrnrlat,
+    ax=ax
+)
+
+# Draw map elements
 my_map.drawcoastlines()
 my_map.drawcountries()
 my_map.fillcontinents(color='coral')
 my_map.drawmapboundary()
 my_map.drawstates(color='b')
 
-# These are the coordinates
-locations =[]
+# Prepare the colormap and plot points
+colmap = mpl.colormaps['rainbow']
+
 for row in data:
-    first_column = row[0]
-    second_column = row[1]
-    third_column = row[2]
-    locations.append([first_column, second_column, third_column])
+    lat, lon, mag = row  # Unpack latitude, longitude, and magnitude
+    xpt, ypt = my_map(lon, lat)  # Convert to map projection coordinates
+    my_map.plot(xpt, ypt, color=colmap(mag / 5), marker='o', markersize=8)
 
-# YOU SHOULD ALSO MAKE A LIST OF COLORS AND SYMBOLS
-colors = ['bo', 'bo', 'bo', 'bo', 'bo', 'bo', 'bo']
-cmap = mpl.colormaps['rainbow']
-# THIS YOU SHOULD REFORMULATE AS A LOOP
-for i, (lat, lon, mag ) in enumerate(locations):
-    xpt, ypt = my_map(lon, lat)
-    c=cmap(mag/5)
-    print(c)
-    my_map.plot(xpt, ypt, color=(0,0,1,mag/5), marker='o')
-
-fig, ax = plt.subplots(figsize=(6, 1))  # Adjust size if needed
-fig.subplots_adjust(bottom=0.5)
-
-cb = plt.colorbar(
-    pm.ScalarMappable(norm=mcolors.Normalize(vmin=1, vmax=5), cmap=pm.Blues),
-    cax=ax, orientation='horizontal'
-)
-
-
-
-
-plt.title('Earthquake occurrence between April and May\nin New Jersey ')
+# Add title and labels
+plt.title('Earthquake occurrence across the United States')
 plt.xlabel('longitude')
 plt.ylabel('latitude')
-plt.legend()
 
+# Create a ScalarMappable for the colorbar with range 0 to 5
+norm = Normalize(vmin=0, vmax=5)
+cmappable = ScalarMappable(norm=norm, cmap=colmap)
+
+# Add the colorbar at the bottom of the figure
+cbar = fig.colorbar(cmappable, ax=ax, orientation='horizontal', fraction=0.046, pad=0.04)
+cbar.set_label('Magnitude')
+
+# Show the plot
 plt.show()
-

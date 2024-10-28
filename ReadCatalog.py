@@ -28,7 +28,7 @@ def get_catalog_data():
             # this updates the counter
             iter += 1
     # Repeat the table
-    for entry in data_array:
-        print(f"x: {entry[0]}, y: {entry[1]}, Magnitude: {entry[2]}")
+    #for entry in data_array:
+       # print(f"x: {entry[0]}, y: {entry[1]}, Magnitude: {entry[2]}")
 
     return data_array

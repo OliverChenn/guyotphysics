@@ -7,15 +7,24 @@ from matplotlib.colors import Normalize
 
 # Read your catalog data (e.g., [[40.74, -74.72, 2.5], [34.05, -118.25, 3.1], ...])
 data = ReadCatalog.get_catalog_data()
-
-# Extract latitudes and longitudes to determine boundaries
+# Get latitudes and longitudes from read catalogto determine boundaries
 lats = [row[0] for row in data]
 lons = [row[1] for row in data]
+mag = [row[2] for row in data]
+mmin= min(mag)
+mmax= max(mag)
+# Make tighter map boundaries with a smaller buffer
+buffer = 0.60
+rlon=max(lons)-min(lons)
+rlat=max(lats)-min(lats)
+# print(f"{min(lons)} {min(lats)} {max(lons)} {max(lats)}")
+# print(f"{rlon} {rlat}")
 
-# Compute tighter map boundaries with a smaller buffer
-buffer = 0.25  # Smaller buffer for tighter zoom
-llcrnrlon, llcrnrlat = min(lons) - buffer, min(lats) - buffer  # Lower-left corner
-urcrnrlon, urcrnrlat = max(lons) + buffer, max(lats) + buffer  # Upper-right corner
+llcrnrlon, llcrnrlat = (min(lons) - buffer*(rlon),
+                        min(lats) - buffer*(rlat))
+urcrnrlon, urcrnrlat = (max(lons) + buffer*(rlon),
+                        max(lats) + buffer*(rlat))
+# print(f"{llcrnrlon} {llcrnrlat} {urcrnrlon} {urcrnrlat}")
 
 # Create a figure and axis
 fig, ax = plt.subplots(figsize=(10, 10))
@@ -39,10 +48,13 @@ my_map.drawstates(color='b')
 # Prepare the colormap and plot points
 colmap = mpl.colormaps['rainbow']
 
+# Plots data and makes the color for the points.
 for row in data:
-    lat, lon, mag = row  # Unpack latitude, longitude, and magnitude
-    xpt, ypt = my_map(lon, lat)  # Convert to map projection coordinates
-    my_map.plot(xpt, ypt, color=colmap(mag / 5), marker='o', markersize=8)
+    lat, lon, mag = row
+    xpt, ypt = my_map(lon, lat)
+# Scaled between zero and one
+    index=(mag-mmin)/(mmax-mmin)
+    my_map.plot(xpt, ypt, color=colmap(index), marker='o', markersize=8)
 
 # Add title and labels
 plt.title('Earthquake occurrence across the United States')
@@ -50,11 +62,11 @@ plt.xlabel('longitude')
 plt.ylabel('latitude')
 
 # Create a ScalarMappable for the colorbar with range 0 to 5
-norm = Normalize(vmin=0, vmax=5)
+norm = Normalize(vmin=mmin, vmax=mmax)
 cmappable = ScalarMappable(norm=norm, cmap=colmap)
 
 # Add the colorbar at the bottom of the figure
-cbar = fig.colorbar(cmappable, ax=ax, orientation='horizontal', fraction=0.046, pad=0.04)
+cbar = fig.colorbar(cmappable, ax=ax, orientation='horizontal', fraction=0.08, pad=0.04)
 cbar.set_label('Magnitude')
 
 # Show the plot

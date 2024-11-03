@@ -1,0 +1,161 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2024-05-01T11:01:27.363Z,40.7284,-74.6754,5,2.6,mb_lg,34,106,0.067,0.49,us,us6000mvg6,2024-07-15T03:58:37.040Z,"1 km NW of Gladstone, New Jersey",earthquake,0.83,1.781,0.085,36,reviewed,us,us
+2024-04-30T23:42:39.232Z,40.6923,-74.7698,7.178,1.8,ml,24,52,0.015,0.25,us,us6000mvcr,2024-07-15T03:58:41.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.11,1.665,0.077,22,reviewed,us,us
+2024-04-30T09:07:26.941Z,40.7084,-74.7681,4.954,0.9,ml,7,98,0.015,0.36,us,us6000mv6t,2024-07-15T03:58:48.040Z,"5 km ESE of Califon, New Jersey",earthquake,1.21,2.651,0.115,10,reviewed,us,us
+2024-04-29T04:44:14.775Z,40.6799,-74.7678,5,0.7,ml,7,67,0.015,0.48,us,us6000muww,2024-07-15T03:58:59.040Z,"7 km NE of Lebanon, New Jersey",earthquake,1.36,1.745,0.115,10,reviewed,us,us
+2024-04-29T04:35:34.181Z,40.6975,-74.7533,6.511,1.2,ml,13,67,0.007,0.24,us,us6000muwh,2024-07-15T03:58:59.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.1,2.608,0.091,16,reviewed,us,us
+2024-04-29T04:30:47.130Z,40.7152,-74.7652,6.873,1,ml,7,196,0.012,0.35,us,us6000muwf,2024-07-15T03:58:59.040Z,"5 km E of Califon, New Jersey",earthquake,1.76,2.28,0.115,10,reviewed,us,us
+2024-04-29T04:06:53.593Z,40.7161,-74.7232,2.443,0.2,ml,6,225,0.028,0.27,us,us6000muw3,2024-07-15T03:58:59.040Z,"4 km W of Gladstone, New Jersey",earthquake,2.05,6.041,0.128,8,reviewed,us,us
+2024-04-29T01:56:24.162Z,40.7041,-74.7723,5.37,0.5,ml,7,137,0.012,0.19,us,us6000muvy,2024-07-15T03:59:00.040Z,"5 km ESE of Califon, New Jersey",earthquake,1.84,2.993,0.115,10,reviewed,us,us
+2024-04-28T20:07:20.157Z,40.7091,-74.7711,6.442,1.2,ml,7,167,0.012,0.33,us,us6000muvt,2024-07-02T22:13:21.040Z,"5 km ESE of Califon, New Jersey",earthquake,1.67,2.303,0.115,10,reviewed,us,us
+2024-04-28T09:29:25.095Z,40.7087,-74.7785,4.162,0.9,ml,8,88,0.017,0.37,us,us6000mupi,2024-07-02T22:13:22.040Z,"4 km ESE of Califon, New Jersey",earthquake,1.23,1.84,0.115,10,reviewed,us,us
+2024-04-28T04:09:51.400Z,40.734,-74.7574,5.71,1.5,ml,16,78,0.03,0.45,us,us6000mun0,2024-07-02T22:13:20.040Z,"6 km SSE of Long Valley, New Jersey",earthquake,0.98,1.828,0.097,14,reviewed,us,us
+2024-04-28T01:19:00.915Z,40.7329,-74.7169,3.742,0.7,ml,5,243,0.042,0.09,us,us6000muj1,2024-07-02T22:13:23.040Z,"4 km WNW of Gladstone, New Jersey",earthquake,2.09,5.097,0.128,8,reviewed,us,us
+2024-04-28T01:07:18.727Z,40.7224,-74.7468,6.551,0.2,ml,6,254,0.02,0.48,us,us6000muiz,2024-07-02T22:13:23.040Z,"6 km W of Gladstone, New Jersey",earthquake,1.72,1.583,0.128,8,reviewed,us,us
+2024-04-28T00:48:02.636Z,40.7284,-74.7519,5.958,0.8,ml,7,220,0.024,0.35,us,us6000muiy,2024-07-02T22:13:22.040Z,"6 km SSE of Long Valley, New Jersey",earthquake,1.64,3.283,0.115,10,reviewed,us,us
+2024-04-27T22:28:11.691Z,40.7057,-74.7576,6.456,1.6,ml,7,190,0.001,0.17,us,us6000muiw,2024-07-02T22:13:19.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.47,0.944,0.115,10,reviewed,us,us
+2024-04-27T16:57:10.613Z,40.7098,-74.77,4.977,1.3,ml,7,172,0.011,0.27,us,us6000muh3,2024-07-02T22:13:20.040Z,"5 km E of Califon, New Jersey",earthquake,1.35,2.621,0.115,10,reviewed,us,us
+2024-04-27T14:56:35.577Z,40.7228,-74.7551,5.553,1.1,ml,7,212,0.018,0.26,us,us6000muh1,2024-07-02T22:13:21.040Z,"6 km E of Califon, New Jersey",earthquake,1.77,2.247,0.115,10,reviewed,us,us
+2024-04-27T13:49:38.053Z,40.6915,-74.7492,5,2.9,mb_lg,30,54,0.014,0.3,us,us6000mub7,2024-07-02T22:13:05.040Z,"7 km WSW of Gladstone, New Jersey",earthquake,1.9,1.99,0.064,64,reviewed,us,us
+2024-04-27T11:10:33.405Z,40.7112,-74.7579,6.101,1,ml,7,196,0.007,0.13,us,us6000muh0,2024-07-02T22:13:21.040Z,"6 km E of Califon, New Jersey",earthquake,1.14,2.317,0.115,10,reviewed,us,us
+2024-04-27T04:10:25.053Z,40.7387,-74.7274,6.52,0.7,ml,5,305,0.041,0.19,us,us6000mugv,2024-07-02T22:13:23.040Z,"5 km WNW of Gladstone, New Jersey",earthquake,2.49,2.055,0.148,6,reviewed,us,us
+2024-04-26T04:58:28.021Z,40.7293,-74.772,2.781,0.9,ml,8,110,0.027,0.39,us,us6000mu6v,2024-07-02T22:13:22.040Z,"5 km ENE of Califon, New Jersey",earthquake,1.88,6.06,0.115,10,reviewed,us,us
+2024-04-26T04:17:15.673Z,40.7015,-74.7588,4.9,0.6,ml,7,107,0.003,0.36,us,us6000mu6r,2024-07-02T22:13:23.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.99,2.624,0.115,10,reviewed,us,us
+2024-04-26T01:55:56.365Z,40.6913,-74.7481,6.114,0.8,ml,7,157,0.004,0.25,us,us6000mtwi,2024-07-02T22:13:22.040Z,"7 km WSW of Gladstone, New Jersey",earthquake,2.13,3.016,0.115,10,reviewed,us,us
+2024-04-25T21:11:59.467Z,40.708,-74.7892,4.969,0.8,ml,6,141,0.025,0.24,us,us6000mtwf,2024-07-02T22:13:22.040Z,"4 km ESE of Califon, New Jersey",earthquake,1.39,2.485,0.128,8,reviewed,us,us
+2024-04-25T17:50:35.167Z,40.7291,-74.7574,6.727,1.1,ml,7,218,0.025,0.25,us,us6000mtwe,2024-07-02T22:13:21.040Z,"6 km SSE of Long Valley, New Jersey",earthquake,1.59,2.578,0.115,10,reviewed,us,us
+2024-04-25T13:06:37.660Z,40.7185,-74.769,7.952,1,ml,5,257,0.017,0.16,us,us6000mtpt,2024-07-02T22:13:21.040Z,"5 km E of Califon, New Jersey",earthquake,3.02,3.94,0.128,8,reviewed,us,us
+2024-04-24T17:12:39.281Z,40.7223,-74.7509,5.261,1.6,ml,13,78,0.019,0.3,us,us6000mtix,2024-07-02T22:13:19.040Z,"7 km E of Califon, New Jersey",earthquake,1.36,2.682,0.091,16,reviewed,us,us
+2024-04-23T23:46:04.794Z,40.7233,-74.7213,6.278,0.7,ml,7,233,0.033,0.24,us,us6000mte1,2024-07-02T22:13:22.040Z,"4 km W of Gladstone, New Jersey",earthquake,2.36,3.241,0.115,10,reviewed,us,us
+2024-04-23T07:46:20.967Z,40.6947,-74.7615,6.966,1.2,ml,5,117,0.01,0.03,us,us6000mt72,2024-07-02T22:13:21.040Z,"6 km ESE of Califon, New Jersey",earthquake,2.42,0.549,0.115,10,reviewed,us,us
+2024-04-23T03:07:29.305Z,40.7091,-74.7693,2.72,0.2,ml,7,171,0.01,0.37,us,us6000mtdl,2024-07-02T22:13:23.040Z,"5 km ESE of Califon, New Jersey",earthquake,1.53,5.636,0.115,10,reviewed,us,us
+2024-04-23T01:13:24.974Z,40.6838,-74.7366,9.109,0.3,ml,4,258,0.011,0.05,us,us6000mtdj,2024-07-02T22:13:23.040Z,"7 km SW of Gladstone, New Jersey",earthquake,2.35,2.731,0.148,6,reviewed,us,us
+2024-04-23T00:20:04.578Z,40.6919,-74.7591,7.037,0.9,ml,6,117,0.008,0.06,us,us6000mt70,2024-07-02T22:13:22.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.72,2.35,0.115,10,reviewed,us,us
+2024-04-22T20:52:43.593Z,40.7246,-74.7725,5,1.2,ml,6,203,0.023,0.31,us,us6000mt6x,2024-07-02T22:13:21.040Z,"5 km E of Califon, New Jersey",earthquake,2.11,1.857,0.115,10,reviewed,us,us
+2024-04-22T20:49:34.372Z,40.6957,-74.7727,5,0.9,ml,6,84,0.015,0.71,us,us6000mt6u,2024-07-02T22:13:21.040Z,"5 km ESE of Califon, New Jersey",earthquake,1.2,1.814,0.115,10,reviewed,us,us
+2024-04-22T16:14:41.183Z,40.6936,-74.7144,6.659,1.5,ml,7,114,0.028,0.23,us,us6000mt01,2024-07-02T22:13:20.040Z,"5 km SW of Gladstone, New Jersey",earthquake,1.69,1.823,0.105,12,reviewed,us,us
+2024-04-22T12:17:41.565Z,40.702,-74.7563,6.568,0.7,ml,5,147,0.003,0.07,us,us6000mszc,2024-07-02T22:13:22.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.63,3.805,0.115,10,reviewed,us,us
+2024-04-21T20:52:52.501Z,40.6588,-74.7455,7.651,0.5,ml,5,163,0.029,0.07,us,us7000mdvb,2024-06-25T21:03:27.040Z,"5 km NNE of Whitehouse Station, New Jersey",earthquake,2.1,3.412,0.121,9,reviewed,us,us
+2024-04-21T18:00:10.928Z,40.7035,-74.7181,9.084,1.2,ml,8,116,0.029,0.12,us,us7000mdv8,2024-06-25T21:03:26.040Z,"4 km WSW of Gladstone, New Jersey",earthquake,1.99,1.565,0.105,12,reviewed,us,us
+2024-04-21T17:51:37.960Z,40.7028,-74.7533,6.932,0.8,ml,5,189,0.003,0.12,us,us7000mdv6,2024-06-25T21:03:26.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.54,3.862,0.115,10,reviewed,us,us
+2024-04-21T17:13:03.485Z,40.7033,-74.7431,5.365,1.3,ml,10,74,0.011,0.18,us,us7000mdq1,2024-06-25T21:03:26.040Z,"6 km WSW of Gladstone, New Jersey",earthquake,1.47,1.995,0.097,14,reviewed,us,us
+2024-04-21T12:23:08.834Z,40.7008,-74.7638,5.453,0.5,ml,5,105,0.006,0.03,us,us7000mdpz,2024-06-25T21:03:25.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.51,4.255,0.115,10,reviewed,us,us
+2024-04-21T09:00:58.947Z,40.6978,-74.7607,6.598,0.6,ml,5,106,0.007,0.06,us,us7000mdpt,2024-06-25T21:03:25.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.91,2.378,0.115,10,reviewed,us,us
+2024-04-21T08:34:59.153Z,40.6878,-74.7623,5.85,0.7,ml,5,129,0.009,0.02,us,us7000mdps,2024-06-25T21:03:25.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.49,3.079,0.115,10,reviewed,us,us
+2024-04-21T07:52:04.712Z,40.6992,-74.764,5.923,0.2,ml,5,107,0.007,0.04,us,us7000mdpr,2024-06-25T21:03:25.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.4,4.153,0.115,10,reviewed,us,us
+2024-04-21T06:48:25.329Z,40.7042,-74.7746,5.019,0.5,ml,5,137,0.013,0.05,us,us7000mdpp,2024-06-25T21:03:24.040Z,"5 km ESE of Califon, New Jersey",earthquake,1.21,4.547,0.115,10,reviewed,us,us
+2024-04-21T05:30:21.282Z,40.7015,-74.7579,6.158,0.6,ml,5,120,0.003,0.04,us,us7000mdpm,2024-06-25T21:03:24.040Z,"6 km ESE of Califon, New Jersey",earthquake,2.4,1.819,0.115,10,reviewed,us,us
+2024-04-21T00:16:45.498Z,40.6803,-74.7725,4.325,0.5,ml,5,139,0.018,0.07,us,us7000mdpj,2024-06-25T21:03:24.040Z,"6 km NE of Lebanon, New Jersey",earthquake,1.49,3.172,0.115,10,reviewed,us,us
+2024-04-21T00:16:38.249Z,40.6883,-74.7862,2.619,0.3,ml,5,132,0.027,0.27,us,us7000mdla,2024-06-25T21:03:20.040Z,"5 km SE of Califon, New Jersey",earthquake,1.95,5.857,0.115,10,reviewed,us,us
+2024-04-20T23:04:33.008Z,40.7056,-74.7167,8.965,1.3,ml,10,91,0.031,0.14,us,us7000mdl6,2024-06-25T21:03:20.040Z,"4 km WSW of Gladstone, New Jersey",earthquake,1.79,2.43,0.091,16,reviewed,us,us
+2024-04-20T21:15:21.593Z,40.7068,-74.7729,5.094,1,ml,5,152,0.012,0.12,us,us7000mdjn,2024-06-25T21:03:18.040Z,"5 km ESE of Califon, New Jersey",earthquake,1.89,2.315,0.121,9,reviewed,us,us
+2024-04-20T18:32:50.748Z,40.6939,-74.7622,6.651,0.6,ml,5,122,0.011,0.04,us,us7000mdjl,2024-06-25T21:03:18.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.56,3.874,0.115,10,reviewed,us,us
+2024-04-20T18:07:10.424Z,40.6767,-74.7709,6.024,0.9,ml,5,143,0.019,0.12,us,us7000mdji,2024-06-25T21:03:18.040Z,"6 km NE of Lebanon, New Jersey",earthquake,1.97,3.423,0.121,9,reviewed,us,us
+2024-04-20T16:36:40.287Z,40.6907,-74.7519,6.6,0.8,ml,5,143,0.003,0.11,us,us7000mdjh,2024-06-25T21:03:18.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.61,3.849,0.115,10,reviewed,us,us
+2024-04-20T14:03:05.918Z,40.7014,-74.7735,4.061,1.3,ml,7,115,0.013,0.09,us,us7000mdjg,2024-06-25T21:03:17.040Z,"5 km ESE of Califon, New Jersey",earthquake,1.5,1.726,0.105,12,reviewed,us,us
+2024-04-20T03:34:05.834Z,40.6948,-74.7588,6.322,1.3,ml,7,109,0.01,0.17,us,us7000mdj6,2024-06-25T21:03:17.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.89,1.737,0.097,14,reviewed,us,us
+2024-04-20T03:17:48.168Z,40.7063,-74.7559,6.175,0.2,ml,4,224,0.002,0.05,us,us7000mdj3,2024-06-25T21:03:17.040Z,"6 km ESE of Califon, New Jersey",earthquake,2.05,2.591,0.128,8,reviewed,us,us
+2024-04-20T03:11:50.521Z,40.6583,-74.7262,9.797,1.1,ml,5,160,0.035,0.09,us,us7000mde1,2024-06-25T21:03:13.040Z,"6 km NE of Whitehouse Station, New Jersey",earthquake,1.81,3.456,0.115,10,reviewed,us,us
+2024-04-20T02:06:35.531Z,40.714,-74.7391,6.198,2.1,mb_lg,23,69,0.017,0.24,us,us7000mddb,2024-06-25T21:03:11.040Z,"6 km W of Gladstone, New Jersey",earthquake,1.28,2.31,0.208,6,reviewed,us,us
+2024-04-19T22:56:11.773Z,40.6907,-74.7663,7.958,1.4,ml,10,126,0.012,0.06,us,us7000mddx,2024-06-25T21:03:12.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.55,1.031,0.091,16,reviewed,us,us
+2024-04-19T22:55:43.352Z,40.6752,-74.7811,5,0.9,ml,5,146,0.026,0.18,us,us7000mddy,2024-06-25T21:03:12.040Z,"5 km NE of Lebanon, New Jersey",earthquake,1.7,1.844,0.115,10,reviewed,us,us
+2024-04-19T08:54:02.088Z,40.7139,-74.7663,4.36,1.5,ml,12,68,0.012,0.31,us,us7000mdc7,2024-06-25T21:03:11.040Z,"5 km E of Califon, New Jersey",earthquake,1.8,3.166,0.091,16,reviewed,us,us
+2024-04-19T07:52:31.752Z,40.6521,-74.766,5,0.3,ml,5,97,0.033,0.25,us,us7000mdbw,2024-06-25T21:03:11.040Z,"4 km N of Whitehouse Station, New Jersey",earthquake,1.05,1.718,0.115,10,reviewed,us,us
+2024-04-19T03:54:03.719Z,40.709,-74.7567,6.852,1.4,ml,16,71,0.005,0.27,us,us7000mdbr,2024-06-25T21:03:11.040Z,"6 km E of Califon, New Jersey",earthquake,1.08,1.82,0.085,18,reviewed,us,us
+2024-04-19T03:12:38.572Z,40.7094,-74.7643,5.007,0.3,ml,4,188,0.007,0.04,us,us7000mdbp,2024-06-25T21:03:11.040Z,"6 km E of Califon, New Jersey",earthquake,1.79,2.972,0.128,8,reviewed,us,us
+2024-04-19T01:04:53.120Z,40.6907,-74.7647,6.313,1,ml,6,100,0.015,0.04,us,us7000md1w,2024-06-25T21:03:05.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.37,2.171,0.115,10,reviewed,us,us
+2024-04-18T14:17:00.101Z,40.7155,-74.7067,9.945,1.4,ml,8,99,0.04,0.18,us,us7000md0b,2024-06-25T21:03:03.040Z,"3 km WSW of Gladstone, New Jersey",earthquake,1.91,2.69,0.097,14,reviewed,us,us
+2024-04-18T13:07:17.862Z,40.6609,-74.7411,8.132,1.5,ml,9,106,0.045,0.21,us,us7000mcx0,2024-06-25T21:03:01.040Z,"5 km NNE of Whitehouse Station, New Jersey",earthquake,1.11,1.741,0.105,12,reviewed,us,us
+2024-04-18T11:17:52.013Z,40.678,-74.7731,8.044,0.7,ml,5,87,0.029,0.14,us,us7000md08,2024-06-25T21:03:03.040Z,"6 km NE of Lebanon, New Jersey",earthquake,4.83,5.932,0.115,10,reviewed,us,us
+2024-04-18T08:50:08.229Z,40.6937,-74.7793,5.657,0.8,ml,5,97,0.02,0.07,us,us7000mcvq,2024-06-25T21:03:01.040Z,"5 km ESE of Califon, New Jersey",earthquake,1.43,3.287,0.115,10,reviewed,us,us
+2024-04-18T02:31:11.724Z,40.7041,-74.7293,8.161,0.3,ml,5,209,0.021,0.23,us,us7000md04,2024-06-25T21:03:03.040Z,"5 km WSW of Gladstone, New Jersey",earthquake,2.33,2.709,0.115,10,reviewed,us,us
+2024-04-17T22:55:11.899Z,40.6969,-74.7605,6.414,0.3,ml,4,160,0.008,0.06,us,us7000mcsr,2024-06-25T21:02:57.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.82,2.829,0.162,5,reviewed,us,us
+2024-04-17T16:40:04.253Z,40.6925,-74.7662,6.998,1.1,ml,5,93,0.014,0.07,us,us7000mcr6,2024-06-25T21:02:56.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.48,2.537,0.115,10,reviewed,us,us
+2024-04-17T04:51:36.757Z,40.7057,-74.757,6.145,0.4,ml,5,190,0.001,0.03,us,us7000mcpv,2024-06-25T21:02:55.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.52,2.322,0.115,10,reviewed,us,us
+2024-04-17T03:03:31.007Z,40.701,-74.7703,5.424,0.3,ml,5,119,0.011,0.03,us,us7000mcpu,2024-06-25T21:02:55.040Z,"5 km ESE of Califon, New Jersey",earthquake,1.41,3.799,0.115,10,reviewed,us,us
+2024-04-16T08:27:23.481Z,40.6993,-74.7683,3.116,1,ml,9,68,0.01,0.13,us,us7000mcfa,2024-06-25T21:02:50.040Z,"6 km ESE of Califon, New Jersey",earthquake,0.98,2.262,0.105,12,reviewed,us,us
+2024-04-16T05:00:08.757Z,40.6872,-74.7588,5.862,0.4,ml,5,118,0.017,0.1,us,us7000mcf3,2024-06-25T21:02:50.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.27,4.012,0.115,10,reviewed,us,us
+2024-04-16T03:51:48.033Z,40.6962,-74.771,5.509,0.3,ml,5,97,0.013,0.05,us,us7000mcf0,2024-06-25T21:02:50.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.32,3.298,0.115,10,reviewed,us,us
+2024-04-16T00:09:47.290Z,40.7033,-74.7411,7.816,1.2,ml,6,117,0.012,0.08,us,us7000mcez,2024-06-25T21:02:49.040Z,"6 km WSW of Gladstone, New Jersey",earthquake,1.58,1.502,0.105,12,reviewed,us,us
+2024-04-16T00:04:31.898Z,40.6667,-74.7444,8.88,1.3,ml,10,95,0.039,0.29,us,us7000mcex,2024-06-25T21:02:49.040Z,"6 km NNE of Whitehouse Station, New Jersey",earthquake,1.15,1.541,0.097,14,reviewed,us,us
+2024-04-15T13:58:52.322Z,40.6873,-74.7498,6.726,1,ml,5,144,0.018,0.05,us,us7000mc95,2024-06-25T21:02:45.040Z,"8 km ESE of Califon, New Jersey",earthquake,1.47,3.094,0.115,10,reviewed,us,us
+2024-04-15T10:50:37.373Z,40.7038,-74.755,6.099,1.2,ml,9,69,0.002,0.05,us,us7000mc93,2024-06-25T21:02:45.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.28,1.458,0.097,14,reviewed,us,us
+2024-04-15T10:23:12.488Z,40.7116,-74.7474,6.587,1.4,ml,9,76,0.01,0.15,us,us7000mc92,2024-06-25T21:02:45.040Z,"7 km W of Gladstone, New Jersey",earthquake,1.5,2.123,0.097,14,reviewed,us,us
+2024-04-15T06:29:43.509Z,40.6941,-74.7628,4.173,0.9,ml,11,70,0.011,0.21,us,us7000mc8q,2024-06-25T21:02:45.040Z,"6 km ESE of Califon, New Jersey",earthquake,0.97,1.659,0.097,14,reviewed,us,us
+2024-04-15T05:17:24.466Z,40.6911,-74.758,6.168,1.3,ml,14,63,0.013,0.16,us,us7000mc8n,2024-06-25T21:02:44.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.09,1.416,0.091,16,reviewed,us,us
+2024-04-15T05:02:17.257Z,40.7032,-74.752,7.211,1.1,ml,8,79,0.004,0.1,us,us7000mc8m,2024-06-25T21:02:44.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.07,1.588,0.097,14,reviewed,us,us
+2024-04-15T03:01:28.776Z,40.6764,-74.7828,3.249,1,ml,8,81,0.034,0.35,us,us7000mc8l,2024-06-25T21:02:44.040Z,"5 km NE of Lebanon, New Jersey",earthquake,1.16,2.402,0.105,12,reviewed,us,us
+2024-04-14T22:07:49.242Z,40.7018,-74.777,5.912,1.3,ml,8,86,0.025,0.24,us,us7000mcek,2024-06-17T02:15:36.040Z,"5 km ESE of Califon, New Jersey",earthquake,0.96,1.709,0.105,12,reviewed,us,us
+2024-04-14T14:31:55.315Z,40.6972,-74.7691,6.935,0.5,ml,5,98,0.012,0.06,us,us7000mcei,2024-06-17T02:15:35.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.34,3.332,0.115,10,reviewed,us,us
+2024-04-14T13:12:46.467Z,40.688,-74.7715,2.946,1,ml,6,85,0.02,0.14,us,us7000mceg,2024-06-17T02:15:34.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.02,3.503,0.105,12,reviewed,us,us
+2024-04-14T10:25:10.589Z,40.6955,-74.7704,5.444,0.4,ml,5,93,0.013,0.07,us,us7000mced,2024-06-17T02:15:33.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.33,2.572,0.115,10,reviewed,us,us
+2024-04-14T08:57:28.455Z,40.6868,-74.771,5.762,0.5,ml,5,87,0.021,0.04,us,us7000mce9,2024-06-17T02:15:33.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.39,1.794,0.115,10,reviewed,us,us
+2024-04-14T06:28:09.374Z,40.6654,-74.7573,6.766,0.4,ml,5,105,0.039,0.11,us,us7000mce7,2024-06-17T02:15:32.040Z,"5 km NNE of Whitehouse Station, New Jersey",earthquake,1.36,3.829,0.115,10,reviewed,us,us
+2024-04-14T06:17:11.811Z,40.6631,-74.7592,7.263,1.5,ml,11,90,0.041,0.12,us,us7000mc8a,2024-06-17T02:15:32.040Z,"5 km N of Whitehouse Station, New Jersey",earthquake,1.19,1.128,0.097,14,reviewed,us,us
+2024-04-14T05:48:35.402Z,40.6801,-74.7727,6.212,0.9,ml,5,87,0.027,0.04,us,us7000mc87,2024-06-17T02:15:32.040Z,"6 km NE of Lebanon, New Jersey",earthquake,1.31,2.796,0.115,10,reviewed,us,us
+2024-04-14T05:31:11.161Z,40.6908,-74.7639,6.013,0.4,ml,5,102,0.014,0.04,us,us7000mc86,2024-06-17T02:15:32.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.4,1.869,0.115,10,reviewed,us,us
+2024-04-14T03:06:51.819Z,40.7066,-74.7585,5.474,0.6,ml,5,190,0.002,0.08,us,us7000mce3,2024-06-17T02:15:30.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.46,3.58,0.115,10,reviewed,us,us
+2024-04-13T22:48:43.446Z,40.7004,-74.7536,5.484,1,ml,6,109,0.005,0.13,us,us7000mce1,2024-06-17T02:15:29.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.21,1.925,0.109,11,reviewed,us,us
+2024-04-13T07:19:22.423Z,40.7082,-74.7674,4.902,1.1,ml,8,78,0.009,0.18,us,us7000mcdw,2024-06-17T02:15:22.040Z,"5 km ESE of Califon, New Jersey",earthquake,2.18,1.98,0.097,14,reviewed,us,us
+2024-04-13T01:19:40.735Z,40.704,-74.7609,5.158,0.6,ml,5,135,0.003,0.03,us,us7000mcas,2024-06-17T02:15:20.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.86,3.864,0.115,10,reviewed,us,us
+2024-04-13T01:14:24.799Z,40.6707,-74.7819,6.472,0.9,ml,5,84,0.039,0.15,us,us7000mcap,2024-06-17T02:15:20.040Z,"5 km NE of Lebanon, New Jersey",earthquake,1.27,3.087,0.115,10,reviewed,us,us
+2024-04-12T21:28:54.125Z,40.6444,-74.7568,6.857,1.5,ml,7,121,0.028,0.25,us,us7000mcam,2024-06-17T02:15:19.040Z,"3 km NNE of Whitehouse Station, New Jersey",earthquake,1.71,2.912,0.097,14,reviewed,us,us
+2024-04-12T13:05:04.273Z,40.7007,-74.7051,8.564,1.8,ml,13,98,0.04,0.38,us,us7000mbt0,2024-06-17T02:15:16.040Z,"4 km SW of Gladstone, New Jersey",earthquake,1.14,1.658,0.091,16,reviewed,us,us
+2024-04-12T10:12:37.471Z,40.6883,-74.757,8.942,1.1,ml,5,124,0.016,0.09,us,us7000mcak,2024-06-17T02:15:15.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.64,1.774,0.115,10,reviewed,us,us
+2024-04-12T09:20:00.545Z,40.6871,-74.7117,7.421,1.9,ml,21,74,0.039,0.44,us,us7000mbsx,2024-06-17T02:15:15.040Z,"5 km SW of Gladstone, New Jersey",earthquake,1.98,2.917,0.074,24,reviewed,us,us
+2024-04-12T03:15:56.057Z,40.6909,-74.7766,4.447,0.9,ml,6,72,0.02,0.18,us,us7000mcaf,2024-06-17T02:15:13.040Z,"5 km ESE of Califon, New Jersey",earthquake,0.94,1.996,0.115,10,reviewed,us,us
+2024-04-12T00:06:36.505Z,40.6944,-74.7607,5.868,0.6,ml,5,111,0.01,0.05,us,us7000mcad,2024-06-17T02:15:12.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.28,1.401,0.121,9,reviewed,us,us
+2024-04-11T14:47:37.315Z,40.699,-74.77,5.132,1.7,ml,6,170,0.011,0.04,us,us7000mbe2,2024-06-17T02:15:10.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.69,1.92,0.128,8,reviewed,us,us
+2024-04-11T13:31:43.481Z,40.6689,-74.7504,5,1.2,ml,3,152,0.036,0.11,us,us7000mca7,2024-06-17T02:15:10.040Z,"6 km NNE of Whitehouse Station, New Jersey",earthquake,6.67,2.029,0.148,6,reviewed,us,us
+2024-04-11T03:35:26.288Z,40.7029,-74.7758,9.591,1.5,ml,5,205,0.014,0.24,us,us7000mca2,2024-06-17T02:15:08.040Z,"5 km ESE of Califon, New Jersey",earthquake,5,2.81,0.115,10,reviewed,us,us
+2024-04-11T02:28:02.146Z,40.6703,-74.755,1.564,1.1,ml,5,135,0.034,0.44,us,us7000mca0,2024-06-17T02:15:07.040Z,"6 km NNE of Whitehouse Station, New Jersey",earthquake,1.45,3.027,0.105,12,reviewed,us,us
+2024-04-11T00:05:14.487Z,40.6886,-74.7194,7.636,1.9,ml,17,79,0.033,0.42,us,us7000mbam,2024-06-17T02:15:07.040Z,"5 km SW of Gladstone, New Jersey",earthquake,1.72,2.211,0.085,18,reviewed,us,us
+2024-04-10T22:21:49.464Z,40.7078,-74.7676,8.35,1.4,ml,4,215,0.009,0.24,us,us7000mbdi,2024-08-01T12:07:08.520Z,"5 km ESE of Califon, New Jersey",earthquake,2.64,5.623,0.148,6,reviewed,us,us
+2024-04-10T14:22:52.782Z,40.6978,-74.7207,9.396,2.6,mb_lg,19,107,0.028,0.14,us,us7000mb70,2024-06-17T02:15:04.040Z,"5 km WSW of Gladstone, New Jersey",earthquake,0.93,1.99,0.084,37,reviewed,us,us
+2024-04-10T02:11:34.069Z,40.688,-74.7455,4.121,1.4,ml,7,213,0.019,0.56,us,us7000mb4g,2024-06-17T02:15:01.040Z,"7 km WSW of Gladstone, New Jersey",earthquake,2.66,1.852,0.128,8,reviewed,us,us
+2024-04-09T22:38:00.574Z,40.6699,-74.7413,8.754,1.6,ml,7,215,0.036,0.51,us,us7000mb3p,2024-06-17T02:15:00.040Z,"6 km NNE of Whitehouse Station, New Jersey",earthquake,3.24,1.08,0.148,6,reviewed,us,us
+2024-04-09T20:59:09.728Z,40.6913,-74.784,7.294,1.3,ml,6,267,0.024,0.56,us,us7000mc9p,2024-06-17T02:15:00.040Z,"5 km SE of Califon, New Jersey",earthquake,3.99,1.29,0.128,8,reviewed,us,us
+2024-04-09T06:51:49.761Z,40.7237,-74.7399,5,1.3,ml,8,208,0.677,0.58,us,us7000mb1l,2024-06-17T02:14:56.040Z,"6 km W of Gladstone, New Jersey",earthquake,1.39,1.902,0.128,8,reviewed,us,us
+2024-04-08T19:42:45.261Z,40.6659,-74.7202,7.948,1.4,ml,5,268,0.704,0.35,us,us7000maur,2024-06-17T02:14:53.040Z,"6 km WSW of Bedminster, New Jersey",earthquake,2.81,9.066,0.148,6,reviewed,us,us
+2024-04-08T10:07:40.322Z,40.6751,-74.7498,4.233,1.6,ml,19,141,0.682,0.48,us,us7000mau7,2024-06-17T02:14:51.040Z,"6 km NNE of Whitehouse Station, New Jersey",earthquake,1.86,5.473,0.097,14,reviewed,us,us
+2024-04-08T06:13:26.185Z,40.6922,-74.7459,5,1.5,ml,9,188,0.702,0.48,us,us7000mas6,2024-06-17T02:14:50.040Z,"7 km WSW of Gladstone, New Jersey",earthquake,2.48,1.683,0.115,10,reviewed,us,us
+2024-04-08T05:21:14.882Z,40.6574,-74.7377,4.327,1.4,ml,11,153,0.719,0.27,us,us7000mas3,2024-06-17T02:14:49.040Z,"5 km NNE of Whitehouse Station, New Jersey",earthquake,2.27,2.741,0.105,12,reviewed,us,us
+2024-04-07T23:31:47.245Z,40.7076,-74.7392,5.423,1.3,ml,6,150,0.697,0.37,us,us7000mapc,2024-06-12T21:51:45.040Z,"6 km WSW of Gladstone, New Jersey",earthquake,1.92,4.196,0.148,6,reviewed,us,us
+2024-04-07T15:35:13.812Z,40.6708,-74.7423,4.14,2.2,mb_lg,24,107,0.678,0.38,us,us7000mamj,2024-06-12T21:51:42.040Z,"6 km NNE of Whitehouse Station, New Jersey",earthquake,1.43,4.784,0.255,4,reviewed,us,us
+2024-04-07T13:53:35.837Z,40.6646,-74.7342,7.716,1.7,ml,9,218,0.674,0.27,us,us7000mamw,2024-06-12T21:51:44.040Z,"6 km NNE of Whitehouse Station, New Jersey",earthquake,3.76,3.905,0.128,8,reviewed,us,us
+2024-04-07T07:40:06.441Z,40.7124,-74.7556,2.133,1.7,ml,8,208,0.681,0.38,us,us7000mamr,2024-06-12T21:51:44.040Z,"6 km E of Califon, New Jersey",earthquake,2.33,4.52,0.128,8,reviewed,us,us
+2024-04-07T05:45:56.539Z,40.6622,-74.7417,5.392,1.7,ml,8,190,0.72,0.27,us,us7000mamg,2024-06-12T21:51:44.040Z,"5 km NNE of Whitehouse Station, New Jersey",earthquake,3.36,5.448,0.128,8,reviewed,us,us
+2024-04-06T23:16:26.766Z,40.7058,-74.733,5.317,1.6,ml,7,211,0.694,0.68,us,us7000maib,2024-06-12T21:51:44.040Z,"6 km WSW of Gladstone, New Jersey",earthquake,2.89,3.984,0.148,6,reviewed,us,us
+2024-04-06T21:34:24.436Z,40.6917,-74.7767,6.238,1.7,ml,11,167,0.691,0.35,us,us7000maia,2024-06-12T21:51:44.040Z,"5 km ESE of Califon, New Jersey",earthquake,1.75,5.298,0.115,10,reviewed,us,us
+2024-04-06T19:34:48.025Z,40.6906,-74.7652,3.857,1.9,ml,31,105,0.689,0.52,us,us7000magt,2024-06-12T21:51:43.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.62,2.734,0.081,20,reviewed,us,us
+2024-04-06T18:22:27.601Z,40.6651,-74.7243,8.843,1.8,ml,16,148,0.707,0.69,us,us7000mahv,2024-06-12T21:51:43.040Z,"6 km NE of Whitehouse Station, New Jersey",earthquake,1.15,6.993,0.097,14,reviewed,us,us
+2024-04-06T12:50:50.807Z,40.682,-74.7684,8.586,1.7,ml,9,178,0.694,0.59,us,us7000mahz,2024-06-12T21:51:44.040Z,"7 km SE of Califon, New Jersey",earthquake,2.49,5.061,0.128,8,reviewed,us,us
+2024-04-06T12:16:33.835Z,40.6912,-74.7308,7.305,1.9,ml,18,107,0.664,0.37,us,us7000mafu,2024-06-12T21:51:42.040Z,"6 km WSW of Gladstone, New Jersey",earthquake,1.47,6.932,0.081,20,reviewed,us,us
+2024-04-06T10:46:39.347Z,40.6987,-74.7493,6.343,2.4,mb_lg,37,105,0.676,0.41,us,us7000mafe,2024-06-12T21:51:41.040Z,"7 km WSW of Gladstone, New Jersey",earthquake,1.77,6.877,0.142,13,reviewed,us,us
+2024-04-06T08:18:26.955Z,40.7345,-74.7679,7.811,1.8,ml,10,113,0.657,0.54,us,us7000mael,2024-06-12T21:51:43.040Z,"5 km S of Long Valley, New Jersey",earthquake,1.08,6.783,0.115,10,reviewed,us,us
+2024-04-06T08:09:17.494Z,40.7092,-74.7529,2.42,1.8,ml,10,209,0.685,0.28,us,us7000maei,2024-06-12T21:51:43.040Z,"7 km E of Califon, New Jersey",earthquake,2.03,3.527,0.128,8,reviewed,us,us
+2024-04-06T07:11:18.638Z,40.6781,-74.7218,3.628,1.7,ml,9,152,0.699,0.34,us,us7000mae9,2024-06-12T21:51:44.040Z,"6 km W of Bedminster, New Jersey",earthquake,1.53,4.376,0.115,10,reviewed,us,us
+2024-04-06T05:07:47.430Z,40.6986,-74.7328,6.306,1.7,ml,11,150,0.697,0.45,us,us7000mad9,2024-06-12T21:51:44.040Z,"6 km WSW of Gladstone, New Jersey",earthquake,1.61,5.407,0.115,10,reviewed,us,us
+2024-04-06T00:51:18.116Z,40.7066,-74.744,4.041,1.5,ml,9,198,0.69,0.48,us,us7000macl,2024-06-12T21:51:44.040Z,"6 km WSW of Gladstone, New Jersey",earthquake,1.49,4.724,0.148,6,reviewed,us,us
+2024-04-06T00:39:11.752Z,40.6855,-74.7005,8.286,1.7,ml,15,143,0.643,0.43,us,us7000maci,2024-06-12T21:51:44.040Z,"4 km W of Bedminster, New Jersey",earthquake,1.64,6.866,0.115,10,reviewed,us,us
+2024-04-05T23:39:23.890Z,40.6678,-74.7545,6.276,1.7,ml,10,142,0.688,0.41,us,us7000mac2,2024-06-12T21:51:43.040Z,"5 km NNE of Whitehouse Station, New Jersey",earthquake,2.12,6.459,0.115,10,reviewed,us,us
+2024-04-05T23:10:48.989Z,40.6857,-74.7645,2.606,1.8,ml,12,198,0.701,0.57,us,us7000mabz,2024-06-12T21:51:43.040Z,"7 km ESE of Califon, New Jersey",earthquake,2.33,4.358,0.128,8,reviewed,us,us
+2024-04-05T22:16:18.334Z,40.6697,-74.7244,6.73,1.9,ml,19,144,0.665,0.59,us,us7000mabx,2024-06-12T21:51:42.040Z,"6 km W of Bedminster, New Jersey",earthquake,1.68,7.142,0.091,16,reviewed,us,us
+2024-04-05T21:59:13.447Z,40.69,-74.7463,4.111,3.7,mwr,34,106,0.676,0.31,us,us7000mab9,2024-10-22T02:13:57.429Z,"7 km WSW of Gladstone, New Jersey",earthquake,1.66,3.393,0.06,27,reviewed,us,us
+2024-04-05T20:21:07.865Z,40.6741,-74.7443,8.779,1.8,ml,13,151,0.716,0.4,us,us7000mabu,2024-06-12T21:51:43.040Z,"6 km NNE of Whitehouse Station, New Jersey",earthquake,1.77,6.911,0.105,12,reviewed,us,us
+2024-04-05T20:13:47.677Z,40.6702,-74.76,5.225,2,ml,22,141,0.691,0.41,us,us7000mabq,2024-06-12T21:51:42.040Z,"6 km N of Whitehouse Station, New Jersey",earthquake,1.65,3.782,0.091,16,reviewed,us,us
+2024-04-05T19:58:22.357Z,40.6878,-74.7613,4.352,1.8,ml,8,117,0.7,0.14,us,us7000mabk,2024-06-12T21:51:43.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.98,5.073,0.115,10,reviewed,us,us
+2024-04-05T18:40:20.523Z,40.7206,-74.7735,8.321,1.8,ml,10,135,0.689,0.39,us,us7000mabf,2024-06-12T21:51:43.040Z,"5 km E of Califon, New Jersey",earthquake,1.79,6.809,0.115,10,reviewed,us,us
+2024-04-05T17:32:13.906Z,40.6415,-74.7464,4.27,2.2,ml,16,109,0.69,0.27,us,us7000ma95,2024-06-12T21:51:41.040Z,"3 km NE of Whitehouse Station, New Jersey",earthquake,1.4,4.35,0.081,20,reviewed,us,us
+2024-04-05T17:21:55.243Z,40.7118,-74.759,3.17,1.7,ml,8,210,0.68,0.29,us,us7000maav,2024-06-12T21:51:43.040Z,"6 km E of Califon, New Jersey",earthquake,2.59,5.817,0.148,6,reviewed,us,us
+2024-04-05T17:18:47.852Z,40.6957,-74.744,5,2.1,ml,15,106,0.673,0.29,us,us7000maal,2024-06-12T21:51:42.040Z,"7 km WSW of Gladstone, New Jersey",earthquake,1.74,1.831,0.085,18,reviewed,us,us
+2024-04-05T17:14:12.664Z,40.6853,-74.7285,8.747,2,ml,15,117,0.7,0.46,us,us7000ma99,2024-06-12T21:51:42.040Z,"6 km SW of Gladstone, New Jersey",earthquake,1.1,6.832,0.097,14,reviewed,us,us
+2024-04-05T16:49:48.675Z,40.6697,-74.7475,7.98,2,ml,9,190,0.682,0.26,us,us7000maae,2024-06-12T21:51:42.040Z,"6 km NNE of Whitehouse Station, New Jersey",earthquake,2.4,7.631,0.128,8,reviewed,us,us
+2024-04-05T16:31:51.084Z,40.7361,-74.7559,4.706,1.8,ml,12,169,0.661,0.49,us,us7000ma98,2024-06-12T21:51:43.040Z,"5 km SSE of Long Valley, New Jersey",earthquake,2.86,4.783,0.105,12,reviewed,us,us
+2024-04-05T15:49:36.525Z,40.7269,-74.7595,5.903,1.9,ml,14,135,0.667,0.23,us,us7000ma9j,2024-06-12T21:51:42.040Z,"6 km E of Califon, New Jersey",earthquake,1.66,4.414,0.091,16,reviewed,us,us
+2024-04-05T15:37:10.555Z,40.6775,-74.7804,9.282,1.8,ml,13,117,0.702,0.32,us,us7000ma9v,2024-06-12T21:51:43.040Z,"6 km NE of Lebanon, New Jersey",earthquake,1.6,6.809,0.115,10,reviewed,us,us
+2024-04-05T15:33:13.846Z,40.6904,-74.7766,2.036,1.9,ml,11,105,0.692,0.25,us,us7000maa5,2024-06-12T21:51:42.040Z,"5 km ESE of Califon, New Jersey",earthquake,1.47,4.414,0.105,12,reviewed,us,us
+2024-04-05T15:27:56.555Z,40.6857,-74.7577,6.613,1.9,ml,14,140,0.685,0.28,us,us7000ma7d,2024-06-12T21:51:42.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.81,3.379,0.097,14,reviewed,us,us
+2024-04-05T15:20:20.260Z,40.693,-74.7507,4.905,2.1,ml,19,175,0.678,0.24,us,us7000ma7c,2024-06-12T21:51:42.040Z,"7 km ESE of Califon, New Jersey",earthquake,1.7,4.833,0.091,16,reviewed,us,us
+2024-04-05T14:29:59.144Z,40.69,-74.7665,6.425,2.6,ml,24,105,0.691,0.52,us,us7000maaw,2024-06-12T21:51:54.040Z,"6 km ESE of Califon, New Jersey",earthquake,1.63,6.042,0.081,20,reviewed,us,us
+2024-04-05T14:23:20.045Z,40.6963,-74.7596,2.624,4.8,mwr,245,54,0.684,0.63,us,us7000ma74,2024-11-03T02:15:33.102Z,"2024 Tewksbury, New Jersey Earthquake",earthquake,0.9,3.316,0.027,130,reviewed,us,us

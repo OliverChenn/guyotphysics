@@ -5,6 +5,7 @@ fname='/Users/oliverchen/PyCharmProjects/guyotphysics/1eqdata'
 df = pd.read_csv('1eqdata')
 
 
+
 def make_df(fname):
     df = pd.read_csv(fname)
     lat, lon, magnitude = df['latitude'], df['longitude'], df['mag']

@@ -1,18 +1,17 @@
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
-import ReadCatalog  # Custom module for reading data
+from ReadCatalog import *
 import matplotlib as mpl
 from matplotlib.cm import ScalarMappable
 from matplotlib.colors import Normalize
 
 # Read your catalog data (e.g., [[40.74, -74.72, 2.5], [34.05, -118.25, 3.1], ...])
-data = ReadCatalog.get_catalog_data()
+data = make_df('/Users/oliverchen/PyCharmProjects/guyotphysics/1eqdata')
 # Get latitudes and longitudes from read catalogto determine boundaries
-lats = [row[0] for row in data]
-lons = [row[1] for row in data]
-mag = [row[2] for row in data]
-mmin= min(mag)
-mmax= max(mag)
+
+lats, lons, mags = make_df('/Users/oliverchen/PyCharmProjects/guyotphysics/1eqdata')
+mmin= min(mags)
+mmax= max(mags)
 # Make tighter map boundaries with a smaller buffer
 buffer = 0.60
 rlon=max(lons)-min(lons)
@@ -49,8 +48,8 @@ my_map.drawstates(color='b')
 colmap = mpl.colormaps['rainbow']
 
 # Plots data and makes the color for the points.
-for row in data:
-    lat, lon, mag = row
+for i in range(len(lats)):
+    lat, lon, mag = lats[i], lons[i], mags[i]
     xpt, ypt = my_map(lon, lat)
 # Scaled between zero and one
     index=(mag-mmin)/(mmax-mmin)

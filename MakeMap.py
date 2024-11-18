@@ -6,10 +6,10 @@ from matplotlib.cm import ScalarMappable
 from matplotlib.colors import Normalize
 
 # Read your catalog data (e.g., [[40.74, -74.72, 2.5], [34.05, -118.25, 3.1], ...])
-data = make_df('/Users/oliverchen/PyCharmProjects/guyotphysics/1eqdata')
+data = make_df('/Users/oliverchen/PyCharmProjects/guyotphysics/eqdata1.csv')
 # Get latitudes and longitudes from read catalogto determine boundaries
 
-lats, lons, mags = make_df('/Users/oliverchen/PyCharmProjects/guyotphysics/1eqdata')
+lats, lons, mags = make_df('/Users/oliverchen/PyCharmProjects/guyotphysics/eqdata1.csv')
 mmin= min(mags)
 mmax= max(mags)
 # Make tighter map boundaries with a smaller buffer

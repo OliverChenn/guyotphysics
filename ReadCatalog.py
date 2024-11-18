@@ -1,10 +1,8 @@
 import numpy as np
 import pandas as pd
 
-fname='/Users/oliverchen/PyCharmProjects/guyotphysics/1eqdata'
-df = pd.read_csv('1eqdata')
-
-
+fname='/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata1.csv'
+df = pd.read_csv(fname)
 
 def make_df(fname):
     df = pd.read_csv(fname)
@@ -12,11 +10,7 @@ def make_df(fname):
     return lat, lon, magnitude
     print(lat, lon, magnitude)
 
-
     return lat, lon, magnitude
-
-
-
 
 # Given a file called eqdata, open it, and read its contents
 import numpy as np

@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 
-fname='/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata1.csv'
 df = pd.read_csv(fname)
 
 def make_df(fname):

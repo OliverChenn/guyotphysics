@@ -2,7 +2,7 @@
 import numpy as np
 # This defines the filename
 def get_catalog_data():
-    fname='/Users/oliverchen/PyCharmProjects/guyotphysics/eqdata1.csv'
+    fname='/Users/oliverchen/PyCharmProjects/guyotphysics/eqdata0.csv'
 
     iter = 1
     maxi = 100000000000000000

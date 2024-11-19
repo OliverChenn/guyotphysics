@@ -1,4 +1,9 @@
 # THE DATA COME FROM:
 https://earthquake.usgs.gov/earthquakes/map/?extent=38.33304,-78.20068&extent=41.7795,-71.70776&range=search&timeZone=utc&search=%7B%22name%22:%22Search%20Results%22,%22params%22:%7B%22starttime%22:%222024-03-01%2000:00:00%22,%22endtime%22:%222024-09-09%2023:59:59%22,%22maxlatitude%22:41.711,%22minlatitude%22:38.408,%22maxlongitude%22:-73.949,%22minlongitude%22:-75.959,%22minmagnitude%22:0,%22maxmagnitude%22:9,%22orderby%22:%22time%22%7D%7D
+Custom Search
+Date: April 1st - May 1st
+Magnitude: 0-5
+Area: New Jersey
+
 # THE FORMAT IS
 latitude longitude magnitude

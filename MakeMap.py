@@ -7,26 +7,34 @@ from ReadCatalog import *
 from ReadCatalog0 import *
 
 # set a flag
-flag = 1
+flag = 0
 
 if flag == 0:
   # Simple space delimited ASCII file for which you use ReadCatalog0
   # Read your catalog data (e.g., [[40.74, -74.72, 2.5], [34.05, -118.25, 3.1], ...])
   fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata0.csv'
   lats, lons, mags = get_catalog_data(fname)
+  # Looks like what's coming out here is not an iterable argument, since "max" down there does not work
+  # How do I make it into an iterable argument
 elif flag == 1:
   # Actual comma-separated-value (csv) file with an actual header for which you use ReadCatalog
   # Get latitudes and longitudes from read catalog to determine boundaries
   fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata1.csv'
   lats, lons, mags = make_df(fname)
 
+# Between flag 0 and flag 1 the variables lats,lons,mags are of a different type
+# and the code that follows understands the second type but not the first
+print(f"{lons}")
 
 # Proceed with the analysis
 mmin= min(mags)
 mmax= max(mags)
+
 # Make tighter map boundaries with a smaller buffer
 buffer = 0.60
 rlon=max(lons)-min(lons)
+print(f"{max(lons)}")
+print(f"{min(lons)}")
 rlat=max(lats)-min(lats)
 # print(f"{min(lons)} {min(lats)} {max(lons)} {max(lats)}")
 # print(f"{rlon} {rlat}")

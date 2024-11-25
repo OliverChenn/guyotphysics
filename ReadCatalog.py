@@ -7,5 +7,3 @@ def make_df(fname):
     lat, lon, magnitude = df['latitude'], df['longitude'], df['mag']
 
     return lat, lon, magnitude
-
-

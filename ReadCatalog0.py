@@ -1,6 +1,6 @@
 import numpy as np
 
-def get_catalog_data():
+def get_catalog_data(fname):
     iter = 1
     maxi = 100000000000000000
     data = 'bogus'
@@ -16,13 +16,23 @@ def get_catalog_data():
                 break
             # Parse the data and assigns it to variable value
             values = data.split()
-            x = float(values[2])
+            x = float(values[0])
             y = float(values[1])
-            magnitude = float(values[4])
+            magnitude = float(values[2])
             # Make a row/column table
             data_array.append((x, y, magnitude))
             # this updates the counter
             iter += 1
-    # Repeat the table
+    iter = 0
+    lat=[]
+    lon=[]
+    mags=[]
     for entry in data_array:
-       print(f"x: {entry[0]}, y: {entry[1]}, Magnitude: {entry[2]}")
+       #print(f"x: {entry[0]}, y: {entry[1]}, Magnitude: {entry[2]}")
+       # How do I make growing arrays that get filled in this loop
+       lat.append({entry[0]})
+       lon.append({entry[1]})
+       mags.append({entry[2]})
+       iter=iter+1
+       #print(f"{iter}")
+    return lat, lon, mags

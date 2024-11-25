@@ -1,7 +1,5 @@
 import pandas as pd
 
-df = pd.read_csv(fname)
-
 def make_df(fname):
     df = pd.read_csv(fname)
     lat, lon, magnitude = df['latitude'], df['longitude'], df['mag']

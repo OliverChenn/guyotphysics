@@ -34,6 +34,7 @@ mmax= max(mags)
 buffer = 0.60
 rlon=max(lons)-min(lons)
 print(f"{max(lons)}")
+# These need to be right before moving on
 print(f"{min(lons)}")
 rlat=max(lats)-min(lats)
 # print(f"{min(lons)} {min(lats)} {max(lons)} {max(lats)}")

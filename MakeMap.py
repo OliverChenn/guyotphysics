@@ -1,9 +1,9 @@
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
-from ReadCatalog import *
 import matplotlib as mpl
 from matplotlib.cm import ScalarMappable
 from matplotlib.colors import Normalize
+from ReadCatalog import *
 
 fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata1.csv'
 # Read your catalog data (e.g., [[40.74, -74.72, 2.5], [34.05, -118.25, 3.1], ...])

@@ -4,12 +4,24 @@ from mpl_toolkits.basemap import Basemap
 from matplotlib.cm import ScalarMappable
 from matplotlib.colors import Normalize
 from ReadCatalog import *
+from ReadCatalog0 import *
 
-fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata1.csv'
-# Read your catalog data (e.g., [[40.74, -74.72, 2.5], [34.05, -118.25, 3.1], ...])
-data = make_df(fname)
-# Get latitudes and longitudes from read catalogto determine boundaries
-lats, lons, mags = make_df(fname)
+# set a flag
+flag = 1
+
+if flag == 0:
+  # Simple space delimited ASCII file for which you use ReadCatalog0
+  # Read your catalog data (e.g., [[40.74, -74.72, 2.5], [34.05, -118.25, 3.1], ...])
+  fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata0.csv'
+  lats, lons, mags = get_catalog_data(fname)
+elif flag == 1:
+  # Actual comma-separated-value (csv) file with an actual header for which you use ReadCatalog
+  # Get latitudes and longitudes from read catalog to determine boundaries
+  fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata1.csv'
+  lats, lons, mags = make_df(fname)
+
+
+# Proceed with the analysis
 mmin= min(mags)
 mmax= max(mags)
 # Make tighter map boundaries with a smaller buffer

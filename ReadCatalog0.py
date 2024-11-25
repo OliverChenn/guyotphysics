@@ -1,13 +1,9 @@
-# Given a file called eqdata, open it, and read its contents
 import numpy as np
-# This defines the filename
-def get_catalog_data():
-    fname='/Users/oliverchen/PyCharmProjects/guyotphysics/eqdata0.csv'
 
+def get_catalog_data():
     iter = 1
     maxi = 100000000000000000
     data = 'bogus'
-
     data_array = []
 
     with open(fname) as file:

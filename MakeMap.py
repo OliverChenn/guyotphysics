@@ -5,7 +5,7 @@ import matplotlib as mpl
 from matplotlib.cm import ScalarMappable
 from matplotlib.colors import Normalize
 
-fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/eqdata1.csv'
+fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata1.csv'
 # Read your catalog data (e.g., [[40.74, -74.72, 2.5], [34.05, -118.25, 3.1], ...])
 data = make_df(fname)
 # Get latitudes and longitudes from read catalogto determine boundaries

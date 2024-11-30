@@ -75,7 +75,8 @@ for i in range(len(lats)):
 # Scaled between zero and one
     index=(mag-mmin)/(mmax-mmin)
     my_map.plot(xpt, ypt, color=colmap(index), marker='o', markersize=8)
-
+print(f"(lons)")
+print(f"(lats)")
 # Add title and labels
 plt.title('Earthquake occurrence across the United States')
 plt.xlabel('longitude')

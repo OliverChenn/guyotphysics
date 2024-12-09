@@ -1,4 +1,4 @@
-import numpy as np
+import pandas as pd
 
 def get_catalog_data(fname):
     iter = 1
@@ -11,28 +11,28 @@ def get_catalog_data(fname):
         # While counter is below maximum and data is not empty
         while iter <= maxi and data:
             data = file.readline().strip()
-            # If the data variable is empty
             if not data:
                 break
-            # Parse the data and assigns it to variable value
+            # Parse the data and assign it to variable values
             values = data.split()
             x = float(values[0])
             y = float(values[1])
             magnitude = float(values[2])
             # Make a row/column table
             data_array.append((x, y, magnitude))
-            # this updates the counter
             iter += 1
-    iter = 0
-    lat=[]
-    lon=[]
-    mags=[]
+
+    lat = []
+    lon = []
+    mags = []
     for entry in data_array:
-       #print(f"x: {entry[0]}, y: {entry[1]}, Magnitude: {entry[2]}")
-       # How do I make growing arrays that get filled in this loop
-       lat.append({entry[0]})
-       lon.append({entry[1]})
-       mags.append({entry[2]})
-       iter=iter+1
-       #print(f"{iter}")
-    return lat, lon, mags
+        lat.append(entry[0])
+        lon.append(entry[1])
+        mags.append(entry[2])
+
+    # Convert lists to pandas Series
+    lat_series = pd.Series(lat, name='Latitude')
+    lon_series = pd.Series(lon, name='Longitude')
+    mags_series = pd.Series(mags, name='Magnitude')
+
+    return lat_series, lon_series, mags_series

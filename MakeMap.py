@@ -16,6 +16,7 @@ if flag == 0:
   lats, lons, mags = get_catalog_data(fname)
   # Looks like what's coming out here is not an iterable argument, since "max" down there does not work
   # How do I make it into an iterable argument
+
 elif flag == 1:
   # Actual comma-separated-value (csv) file with an actual header for which you use ReadCatalog
   # Get latitudes and longitudes from read catalog to determine boundaries
@@ -39,13 +40,15 @@ print(f"{min(lons)}")
 rlat=max(lats)-min(lats)
 # print(f"{min(lons)} {min(lats)} {max(lons)} {max(lats)}")
 # print(f"{rlon} {rlat}")
+print(f"{buffer}")
+print(f"{rlat}")
+print(f"{rlon}")
 
 llcrnrlon, llcrnrlat = (min(lons) - buffer*(rlon),
                         min(lats) - buffer*(rlat))
 urcrnrlon, urcrnrlat = (max(lons) + buffer*(rlon),
                         max(lats) + buffer*(rlat))
 # print(f"{llcrnrlon} {llcrnrlat} {urcrnrlon} {urcrnrlat}")
-
 # Create a figure and axis
 fig, ax = plt.subplots(figsize=(10, 10))
 
@@ -75,8 +78,8 @@ for i in range(len(lats)):
 # Scaled between zero and one
     index=(mag-mmin)/(mmax-mmin)
     my_map.plot(xpt, ypt, color=colmap(index), marker='o', markersize=8)
-print(f"(lons)")
-print(f"(lats)")
+print(f"(lon)")
+print(f"(lat)")
 # Add title and labels
 plt.title('Earthquake occurrence across the United States')
 plt.xlabel('longitude')

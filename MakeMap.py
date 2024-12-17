@@ -7,7 +7,7 @@ from ReadCatalog import *
 from ReadCatalog0 import *
 
 # set a flag
-flag = 0
+flag = 1
 
 if flag == 0:
   # Simple space delimited ASCII file for which you use ReadCatalog0
@@ -82,6 +82,10 @@ print(f"(lat)")
 plt.title('Earthquake occurrence across the United States')
 plt.xlabel('longitude')
 plt.ylabel('latitude')
+
+# Work on map annotations
+
+
 
 # Create a ScalarMappable for the colorbar with range 0 to 5
 norm = Normalize(vmin=mmin, vmax=mmax)

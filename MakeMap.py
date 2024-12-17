@@ -20,15 +20,19 @@ elif flag == 1:
   # Actual comma-separated-value (csv) file with an actual header for which you use ReadCatalog
   # Get latitudes and longitudes from read catalog to determine boundaries
   fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata1.csv'
+  # Also get out the time
   lats, lons, mags = make_df(fname)
 
 # Between flag 0 and flag 1 the variables lats,lons,mags are of a different type
 # and the code that follows understands the second type but not the first
-print(f"{lons}")
+# print(f"{lons}")
 
 # Proceed with the analysis
 mmin= min(mags)
 mmax= max(mags)
+# Get out the time limits
+# ftime =
+# ltime =
 
 # Make tighter map boundaries with a smaller buffer
 buffer = 0.60
@@ -80,8 +84,14 @@ for i in range(len(lats)):
     my_map.plot(xpt, ypt, color=colmap(index), marker='o', markersize=8)
 print(f"(lon)")
 print(f"(lat)")
-# Add title and labels
-plt.title('Earthquake occurrence across the United States')
+# Add title and labels - also include between what time
+# Make a string with that information and then use
+#plt.title('Earthquake occurrence across the United States')
+print(f"(lon)")
+#print("% [flag width . (dot) precision] type" % (value or object))
+plt.title(print(
+    'Earthquake occurrence across the United States between %s and %s',
+    (ftime,ltime))
 plt.xlabel('longitude')
 plt.ylabel('latitude')
 

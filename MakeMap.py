@@ -14,8 +14,6 @@ if flag == 0:
   # Read your catalog data (e.g., [[40.74, -74.72, 2.5], [34.05, -118.25, 3.1], ...])
   fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata0.csv'
   lats, lons, mags = get_catalog_data(fname)
-  # Looks like what's coming out here is not an iterable argument, since "max" down there does not work
-  # How do I make it into an iterable argument
 
 elif flag == 1:
   # Actual comma-separated-value (csv) file with an actual header for which you use ReadCatalog

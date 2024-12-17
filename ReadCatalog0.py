@@ -30,7 +30,8 @@ def get_catalog_data(fname):
         lon.append(entry[1])
         mags.append(entry[2])
 
-    # Convert lists to pandas Series
+    # Convert lists to pandas Series or you get an "not an iterable argument" error
+    # when you work on these entries with other functions, e.g, "max"
     lat_series = pd.Series(lat, name='Latitude')
     lon_series = pd.Series(lon, name='Longitude')
     mags_series = pd.Series(mags, name='Magnitude')

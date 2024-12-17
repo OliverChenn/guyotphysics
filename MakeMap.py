@@ -5,6 +5,7 @@ from matplotlib.cm import ScalarMappable
 from matplotlib.colors import Normalize
 from ReadCatalog import *
 from ReadCatalog0 import *
+import numpy as np
 
 # set a flag
 flag = 1
@@ -42,6 +43,7 @@ print(f"{buffer}")
 print(f"{rlat}")
 print(f"{rlon}")
 
+# These are the coordinates of the map corners
 llcrnrlon, llcrnrlat = (min(lons) - buffer*(rlon),
                         min(lats) - buffer*(rlat))
 urcrnrlon, urcrnrlat = (max(lons) + buffer*(rlon),
@@ -83,9 +85,17 @@ plt.title('Earthquake occurrence across the United States')
 plt.xlabel('longitude')
 plt.ylabel('latitude')
 
-# Work on map annotations
-
-
+# Draw subdivisions too
+# Work on map annotations within the actual boundaries
+# Labelled where they intersect the left, right, top or bottom of the plot
+my_map.drawmeridians(np.arange(llcrnrlon,urcrnrlon,0.05),
+                     dashes=[1,0],linewidth=0.1,
+                     labels=[True,True,False,True],
+                     fontname='Times New Roman',fontsize=12)
+my_map.drawparallels(np.arange(llcrnrlat,urcrnrlat,0.05),
+                     dashes=[1,0],linewidth=0.1,
+                     labels=[True,True,False,True],
+                     fontname='Times New Roman',fontsize=12)
 
 # Create a ScalarMappable for the colorbar with range 0 to 5
 norm = Normalize(vmin=mmin, vmax=mmax)

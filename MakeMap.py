@@ -11,14 +11,13 @@ import numpy as np
 flag = 1
 
 if flag == 0:
-  # Simple space delimited ASCII file for which you use ReadCatalog0
-  # Read your catalog data (e.g., [[40.74, -74.72, 2.5], [34.05, -118.25, 3.1], ...])
-  fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata0.csv'
+  # Simple space delimited ASCII file for which you use ReadCatalog0  fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata0.csv'
   lats, lons, mags = get_catalog_data(fname)
 
 elif flag == 1:
   # Actual comma-separated-value (csv) file with an actual header for which you use ReadCatalog
   # Get latitudes and longitudes from read catalog to determine boundaries
+  # Wherefrom
   fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata1.csv'
   # Also get out the time
   lats, lons, mags = make_df(fname)
@@ -35,23 +34,23 @@ mmax= max(mags)
 # ltime =
 
 # Make tighter map boundaries with a smaller buffer
-buffer = 0.60
+# https://stackoverflow.com/questions/74333139/how-to-make-a-buffer-have-specific-latitude-and-longitude-coordinates-in-geopand
+# link is a reference and a small inspiration of my idea of buffer_lon
+buffer_lon = 1.2  # Horizontal buffer
+buffer_lat = 0.4  # Vertical buffer
 rlon=max(lons)-min(lons)
-print(f"{max(lons)}")
+
 # These need to be right before moving on
-print(f"{min(lons)}")
+
 rlat=max(lats)-min(lats)
 # print(f"{min(lons)} {min(lats)} {max(lons)} {max(lats)}")
 # print(f"{rlon} {rlat}")
-print(f"{buffer}")
-print(f"{rlat}")
-print(f"{rlon}")
 
 # These are the coordinates of the map corners
-llcrnrlon, llcrnrlat = (min(lons) - buffer*(rlon),
-                        min(lats) - buffer*(rlat))
-urcrnrlon, urcrnrlat = (max(lons) + buffer*(rlon),
-                        max(lats) + buffer*(rlat))
+llcrnrlon, llcrnrlat = (min(lons) - buffer_lon * rlon,
+                        min(lats) - buffer_lat * rlat)
+urcrnrlon, urcrnrlat = (max(lons) + buffer_lon * rlon,
+                        max(lats) + buffer_lat * rlat)
 # print(f"{llcrnrlon} {llcrnrlat} {urcrnrlon} {urcrnrlat}")
 # Create a figure and axis
 fig, ax = plt.subplots(figsize=(10, 10))
@@ -71,6 +70,7 @@ my_map.drawcountries()
 my_map.fillcontinents(color='coral')
 my_map.drawmapboundary()
 my_map.drawstates(color='b')
+my_map.drawcounties(color='b')
 
 # Prepare the colormap and plot points
 colmap = mpl.colormaps['rainbow']
@@ -89,9 +89,9 @@ print(f"(lat)")
 #plt.title('Earthquake occurrence across the United States')
 print(f"(lon)")
 #print("% [flag width . (dot) precision] type" % (value or object))
-plt.title(print(
-    'Earthquake occurrence across the United States between %s and %s',
-    (ftime,ltime))
+
+plt.title('Earthquake occurrence across the United States between %s and %s')
+#(ftime,ltime))
 plt.xlabel('longitude')
 plt.ylabel('latitude')
 
@@ -104,7 +104,7 @@ my_map.drawmeridians(np.arange(llcrnrlon,urcrnrlon,0.05),
                      fontname='Times New Roman',fontsize=12)
 my_map.drawparallels(np.arange(llcrnrlat,urcrnrlat,0.05),
                      dashes=[1,0],linewidth=0.1,
-                     labels=[True,True,False,True],
+                     labels=[False,True,False,True],
                      fontname='Times New Roman',fontsize=12)
 
 # Create a ScalarMappable for the colorbar with range 0 to 5

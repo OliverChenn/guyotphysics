@@ -6,6 +6,7 @@ from matplotlib.colors import Normalize
 from ReadCatalog import *
 from ReadCatalog0 import *
 import numpy as np
+from datetime import datetime
 
 # set a flag
 flag = 1
@@ -20,7 +21,7 @@ elif flag == 1:
   # Wherefrom
   fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata1.csv'
   # Also get out the time
-  lats, lons, mags = make_df(fname)
+  lats, lons, mags, time = make_df(fname)
 
 # Between flag 0 and flag 1 the variables lats,lons,mags are of a different type
 # and the code that follows understands the second type but not the first
@@ -30,8 +31,8 @@ elif flag == 1:
 mmin= min(mags)
 mmax= max(mags)
 # Get out the time limits
-# ftime =
-# ltime =
+ftime = min(time)
+ltime = max(time)
 
 # Make tighter map boundaries with a smaller buffer
 # https://stackoverflow.com/questions/74333139/how-to-make-a-buffer-have-specific-latitude-and-longitude-coordinates-in-geopand
@@ -67,7 +68,7 @@ my_map = Basemap(
 # Draw map elements
 my_map.drawcoastlines()
 my_map.drawcountries()
-my_map.fillcontinents(color='coral')
+my_map.fillcontinents(color='white')
 my_map.drawmapboundary()
 my_map.drawstates(color='b')
 my_map.drawcounties(color='b')
@@ -90,7 +91,7 @@ print(f"(lat)")
 print(f"(lon)")
 #print("% [flag width . (dot) precision] type" % (value or object))
 
-plt.title('Earthquake occurrence across the United States between %s and %s')
+plt.title(f'Earthquake occurrence across the United States between {ftime} and {ltime}')
 #(ftime,ltime))
 plt.xlabel('longitude')
 plt.ylabel('latitude')

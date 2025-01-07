@@ -19,17 +19,19 @@ elif flag == 1:
   # Actual comma-separated-value (csv) file with an actual header for which you use ReadCatalog
   # Get latitudes and longitudes from read catalog to determine boundaries
   # Wherefrom
-  fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata1.csv'
+  fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/query_01072025.csv'
   # Also get out the time
   lats, lons, mags, time = make_df(fname)
 
-# Between flag 0 and flag 1 the variables lats,lons,mags are of a different type
+# Between flag 0 and flag 1 the variables lats, lons, mags are of a different type
 # and the code that follows understands the second type but not the first
 # print(f"{lons}")
 
 # Proceed with the analysis
 mmin= min(mags)
 mmax= max(mags)
+# https://docs.python.org/3/library/functions.html, this is the link to how I got the min(time) and max(time)
+# I also got inspiration from the min(mags) above and did the same to time.
 # Get out the time limits
 ftime = min(time)
 ltime = max(time)

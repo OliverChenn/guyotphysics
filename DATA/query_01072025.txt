@@ -1,0 +1,8 @@
+https://earthquake.usgs.gov/earthquakes/search/
+
+
+2024-04-05 00:00:00
+2025-01-07 23:59:59
+
+# this is the center, 50 km radius
+2024-04-05T14:23:20.045Z,40.6963,-74.7596,2.624,4.8,mwr,245,54,0.684,0.63,us,us7000ma74,2025-01-05T04:18:59.780Z,"2024 Tewksbury, New Jersey Earthquake",earthquake,0.9,3.316,0.027,130,reviewed,us,us

@@ -74,6 +74,7 @@ my_map.fillcontinents(color='white')
 my_map.drawmapboundary()
 my_map.drawstates(color='b')
 my_map.drawcounties(color='b')
+my_map.drawrivers(color='b')
 
 # Prepare the colormap and plot points
 colmap = mpl.colormaps['rainbow']

@@ -14,9 +14,6 @@ for tr in st:
             tr.stats.starttime + end_idx * tr.stats.delta)
 st.plot(size=(1600, 1200), dpi=200)
 
-# colors = ["red", "green", "blue"]
 
-# for i, tr in enumerate(st):
-  #  tr.plot(color=colors[i % len(colors)], linewidth=1.5)
 
 st.plot()

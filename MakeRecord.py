@@ -1,5 +1,6 @@
 from obspy import read
-st = read("/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/S0001_MC-PH1_0248_20240405_142022.seed")
+st = read("/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/S0002_centaur-6_2977_20250102_010718.seed")
+#st = read("/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/S0001_MC-PH1_0248_20240405_142022.seed")
 print(st)
 for tr in st:
     data_abs = abs(tr.data)
@@ -12,7 +13,7 @@ for tr in st:
 
     tr.trim(tr.stats.starttime + start_idx * tr.stats.delta,
             tr.stats.starttime + end_idx * tr.stats.delta)
-st.plot(size=(1600, 1200), dpi=200)
+st.plot(size=(2000, 1500), dpi=125)
 
 
 

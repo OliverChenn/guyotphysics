@@ -1,20 +1,25 @@
 from obspy import read
+import matplotlib.pyplot as plt
+from datetime import datetime, timedelta
+
 st = read("/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/S0002_centaur-6_2977_20250102_010718.seed")
-#st = read("/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/S0001_MC-PH1_0248_20240405_142022.seed")
-print(st)
-for tr in st:
-    data_abs = abs(tr.data)
-    max_amp = max(data_abs)
-    threshold = max_amp * 0.05
 
-    mask = data_abs > threshold
-    start_idx = mask.argmax()
-    end_idx = len(mask) - mask[::-1].argmax()
 
-    tr.trim(tr.stats.starttime + start_idx * tr.stats.delta,
-            tr.stats.starttime + end_idx * tr.stats.delta)
+
+st.decimate(factor=2)
+start_time = st[0].stats.starttime
+end_time = start_time + 600
+
+st_segment = st.slice(starttime=start_time, endtime=end_time)
+
+st_segment.plot(
+    type="relative",
+    number_of_ticks=0,
+    handle=True,
+    title="(beginning)  -----------------------  (end)"
+)
 st.plot(size=(2000, 1500), dpi=125)
 
 
 
-st.plot()
+

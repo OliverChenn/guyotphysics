@@ -1,6 +1,6 @@
-# This makes a ...
+# This makes a histogram of earthquake events form a file
 #
-# Written by
+# Written by Oliver Chen
 from ReadCatalog import *
 import matplotlib.pyplot as plt
 

@@ -1,4 +1,4 @@
-# This makes a histogram of earthquake events form a file
+# This makes a histogram of earthquake events from a file
 #
 # Written by Oliver Chen
 from ReadCatalog import *

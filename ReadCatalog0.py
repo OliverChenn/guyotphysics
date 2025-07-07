@@ -1,3 +1,7 @@
+# Reads .txt file for MakeMap
+
+# Written by Oliver Chen
+
 import pandas as pd
 
 def get_catalog_data(fname):

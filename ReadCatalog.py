@@ -1,6 +1,7 @@
 # Plots csv file for MakeMap
 
-# Written By Oliver Chen
+# Written by Oliver Chen
+
 import pandas as pd
 # Defines a function
 def make_df(fname):

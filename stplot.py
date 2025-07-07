@@ -1,3 +1,7 @@
+# Plots files into records and makes them into a pdf
+
+# Written by Oliver Chen
+
 from obspy import read
 import matplotlib.pyplot as plt
 
@@ -82,7 +86,7 @@ for line in lines:
 
     axes[-1].set_xlabel("Time (seconds)")
     plt.tight_layout()
-
+# You used the old file name to make a new file
     output_file = filepath.replace(".miniseed", ".pdf")
     plt.savefig(output_file)
     plt.close(fig)

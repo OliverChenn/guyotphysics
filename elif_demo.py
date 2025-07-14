@@ -1,4 +1,6 @@
+# A demo of the flag system in MakeMap
 
+# Written By Oliver Chen
 flag =
 
 if flag == 0:

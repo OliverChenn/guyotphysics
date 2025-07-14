@@ -1,5 +1,7 @@
 # Query's and automatically plug in values in advanced search in USGS
 
+# Written By Oliver Chen
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys

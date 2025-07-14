@@ -1,6 +1,10 @@
+# Plots a map that maps either earthquakes from a csv file or a .txt file
+
+# Written by Oliver Chen
+
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-from mpl_toolkits.basemap import Basemap
+from mpl_toolkits.Basemap import Basemap
 from matplotlib.cm import ScalarMappable
 from matplotlib.colors import Normalize
 from ReadCatalog import *
@@ -9,7 +13,7 @@ import numpy as np
 from datetime import datetime
 
 # set a flag
-flag = 1
+flag = 0
 
 if flag == 0:
   # Simple space delimited ASCII file for which you use ReadCatalog0  fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata0.csv'

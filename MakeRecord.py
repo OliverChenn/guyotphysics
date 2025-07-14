@@ -1,3 +1,8 @@
+# Makes a file that contains statistical records from earthquake loop
+
+# Written By Oliver Chen
+
+
 from obspy import read
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta

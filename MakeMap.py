@@ -13,7 +13,7 @@ import numpy as np
 from datetime import datetime
 
 # set a flag
-flag = 0
+flag = 1
 
 if flag == 0:
   # Simple space delimited ASCII file for which you use ReadCatalog0  fname = '/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/eqdata0.csv'

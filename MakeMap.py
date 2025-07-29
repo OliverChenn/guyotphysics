@@ -4,7 +4,8 @@
 
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-from mpl_toolkits.Basemap import Basemap
+import mpl_toolkits
+from mpl_toolkits.basemap import Basemap
 from matplotlib.cm import ScalarMappable
 from matplotlib.colors import Normalize
 from ReadCatalog import *
@@ -98,7 +99,7 @@ print(f"(lat)")
 print(f"(lon)")
 #print("% [flag width . (dot) precision] type" % (value or object))
 
-plt.title(f'Earthquake occurrence across the United States between {ftime} and {ltime}')
+plt.title(f'Earthquake occurrence across New Jersey between {ftime} and {ltime}')
 #(ftime,ltime))
 plt.xlabel('longitude')
 plt.ylabel('latitude')

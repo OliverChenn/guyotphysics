@@ -2,7 +2,6 @@
 
 # Written By Oliver Chen
 
-
 from obspy import read
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
@@ -11,7 +10,6 @@ from os import listdir
 import re
 
 flag = 0
-
 
 # This is reading a file that has combined 6 channels that are called HHX HHY HHZ, HNX HNY HNZ, which are the 3 components each of the velocity sensor and the accelorameter
 # st = read("/Users/oliverchen/PyCharmProjects/guyotphysics/DATA/S0002_centaur-6_2977_20250102_010718.seed")
